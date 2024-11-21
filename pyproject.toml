@@ -6,5 +6,8 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "bokeh>=3.6.1",
+    "flask-wtf>=1.2.2",
     "flask>=3.1.0",
+    "pypika>=0.48.9",
+    "wtforms>=3.2.1",
 ]
