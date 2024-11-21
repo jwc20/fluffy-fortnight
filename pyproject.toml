@@ -1,0 +1,10 @@
+[project]
+name = "fluffy-fortnight"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "bokeh>=3.6.1",
+    "flask>=3.1.0",
+]
