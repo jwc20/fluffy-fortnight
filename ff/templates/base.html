@@ -1,45 +1,21 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--  <head>-->
-<!--    <meta charset="utf-8" />-->
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1" />-->
-<!--    <meta name="color-scheme" content="light dark" />-->
-<!--    <script src="https://unpkg.com/htmx.org@2.0.3"></script>-->
-<!--    <link-->
-<!--      rel="stylesheet"-->
-<!--      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"-->
-<!--    />-->
-<!--    <title>fluffy fortnight</title>-->
-<!--  </head>-->
-<!--  <body>-->
-<!--    <main class="container">-->
-<!--      <h1>fluffy fortnight base page</h1>-->
-<!--    </main>-->
-<!--  </body>-->
-<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <script src="https://unpkg.com/htmx.org@2.0.3" integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <title>fluffy fortnight</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>fluffy fortnight index page</h1>
+<!--      show home/index.html -->
 
-
-<!doctype html>
-<title>{% block title %}{% endblock %} - Flaskr</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-<nav>
-  <h1>Flaskr</h1>
-  <ul>
-    {% if g.user %}
-      <li><span>{{ g.user['username'] }}</span>
-      <li><a href="{{ url_for('auth.logout') }}">Log Out</a>
-    {% else %}
-      <li><a href="{{ url_for('auth.register') }}">Register</a>
-      <li><a href="{{ url_for('auth.login') }}">Log In</a>
-    {% endif %}
-  </ul>
-</nav>
-<section class="content">
-  <header>
-    {% block header %}{% endblock %}
-  </header>
-  {% for message in get_flashed_messages() %}
-    <div class="flash">{{ message }}</div>
-  {% endfor %}
-  {% block content %}{% endblock %}
-</section>
+    </main>
+  </body>
+</html>
