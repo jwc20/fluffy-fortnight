@@ -108,6 +108,7 @@ CREATE TABLE IF NOT EXISTS problem_tags (
     FOREIGN KEY (tag_id) REFERENCES tags (id)
 );
 
+
 -- Initial Data
 INSERT OR IGNORE INTO difficulty (name, priority) VALUES
 ('Easy', 1),
@@ -119,3 +120,13 @@ INSERT OR IGNORE INTO status (name, description) VALUES
 ('In Progress', 'Currently working on the problem'),
 ('Solved', 'Successfully solved'),
 ('Need Review', 'Solved but needs revision');
+
+
+-- LeetCode Problems
+INSERT OR IGNORE INTO problems (leetcode_number, title, difficulty_id, description, solution_notes, time_complexity, space_complexity) VALUES
+(1, 'Two Sum', 1, 'Given an array of integers, return indices of the two numbers such that they add up to a specific target.', 'Use a hash map to store the difference between the target and the current number.', 'O(n)', 'O(n)'),
+(2, 'Add Two Numbers', 2, 'You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.', 'Use a dummy node to keep track of the head of the result linked list.', 'O(n)', 'O(n)'),
+(3, 'Longest Substring Without Repeating Characters', 2, 'Given a string, find the length of the longest substring without repeating characters.', 'Use a sliding window approach with a hash set to keep track of characters.', 'O(n)', 'O(n)'),
+(4, 'Median of Two Sorted Arrays', 2, 'There are two sorted arrays nums1 and nums2 of size m and n respectively. Find the median of the two sorted arrays.', 'Use binary search to find the partition point in the arrays.', 'O(log(min(m, n)))', 'O(1)');
+
+
