@@ -1,10 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Problems index</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-</body>
-</html>
+{% block content %}
+  <h1>Problems</h1>
+  <ul>
+    {% for problem in problems %}
+      <li>
+          {{ problem['title'] }}
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

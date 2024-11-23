@@ -31,16 +31,13 @@ def create_app(test_config=None):
     app.register_blueprint(main_bp)
     app.add_url_rule('/', endpoint='index')
 
-    # from ff.auth import auth
-    # app.register_blueprint(auth.bp)
-
     from ff.auth import bp as auth_bp
     app.register_blueprint(auth_bp, url_prefix='/auth')
 
-    # register blueprint for problems
-    # from ff.problems import problems
+    from ff.problems import bp as problems_bp
     # app.register_blueprint(problems.bp)
-    # app.add_url_rule('/', endpoint='index')
+    app.register_blueprint(problems_bp, url_prefix='/problems')
+
 
     @app.route('/test/')
     def test_page():
