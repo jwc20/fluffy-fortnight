@@ -5,10 +5,6 @@ from ff.db import get_db
 
 from ff.auth import bp
 
-# from ff.auth import bp
-# # bp = Blueprint('auth', __name__, url_prefix='/auth')
-
-
 @bp.route('/register', methods=('GET', 'POST'))
 def register():
     if request.method == 'POST':
