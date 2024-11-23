@@ -10,4 +10,5 @@ dependencies = [
     "flask>=3.1.0",
     "pypika>=0.48.9",
     "wtforms>=3.2.1",
+    "sqlalchemy>=2.0.36",
 ]
