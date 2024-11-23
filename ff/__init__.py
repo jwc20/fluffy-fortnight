@@ -26,8 +26,25 @@ def create_app(test_config=None):
     from ff import db
     db.init_app(app)
 
-    # register blueprint
-    from ff.blueprints import auth
-    app.register_blueprint(auth.bp)
+    # register blueprints
+    from ff.main import bp as main_bp
+    app.register_blueprint(main_bp)
+    app.add_url_rule('/', endpoint='index')
+
+    # from ff.auth import auth
+    # app.register_blueprint(auth.bp)
+
+    from ff.auth import bp as auth_bp
+    app.register_blueprint(auth_bp, url_prefix='/auth')
+
+    # register blueprint for problems
+    # from ff.problems import problems
+    # app.register_blueprint(problems.bp)
+    # app.add_url_rule('/', endpoint='index')
+
+    @app.route('/test/')
+    def test_page():
+        return '<h1>Testing the Flask Application Factory Pattern</h1>'
+
 
     return app

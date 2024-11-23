@@ -3,7 +3,10 @@ from flask import (Blueprint, flash, g, redirect, render_template, request, sess
 from werkzeug.security import check_password_hash, generate_password_hash
 from ff.db import get_db
 
-bp = Blueprint('auth', __name__, url_prefix='/auth')
+from ff.auth import bp
+
+# from ff.auth import bp
+# # bp = Blueprint('auth', __name__, url_prefix='/auth')
 
 
 @bp.route('/register', methods=('GET', 'POST'))
