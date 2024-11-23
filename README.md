@@ -3,6 +3,13 @@
 project for tracking dsa problems and job applications.
 
 
-## db
+## problems tables
 
-![db schema](db_schema.png)
+![db schema](./ff/static/img/db_schema.png)
+
+
+## job_applications tables
+
+
+## user tables
+
