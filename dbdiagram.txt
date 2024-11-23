@@ -1,0 +1,102 @@
+Table problems {
+  id integer [primary key]
+  leetcode_number integer [unique, note: 'Original LeetCode problem number']
+  title varchar
+  description text
+  difficulty_id integer
+  solution_notes text
+  time_complexity varchar
+  space_complexity varchar
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table difficulty {
+  id integer [primary key]
+  name varchar
+  priority integer [note: 'For sorting (e.g., Easy=1, Medium=2, Hard=3)']
+}
+
+Table problem_attempts {
+  id integer [primary key]
+  problem_id integer
+  user_id integer
+  status_id integer
+  attempt_date timestamp
+  notes text
+  code text
+  time_taken_minutes integer
+  created_at timestamp
+}
+
+Table status {
+  id integer [primary key]
+  name varchar [note: 'e.g., Solved, Attempted, Failed, Skipped']
+  description varchar
+}
+
+Table patterns {
+  id integer [primary key]
+  name varchar
+  description text
+}
+
+Table problem_patterns {
+  problem_id integer
+  pattern_id integer
+  indexes {
+    (problem_id, pattern_id)
+  }
+}
+
+Table companies {
+  id integer [primary key]
+  name varchar
+  industry varchar
+}
+
+Table problem_companies {
+  problem_id integer
+  company_id integer
+  last_asked timestamp
+  indexes {
+    (problem_id, company_id)
+  }
+}
+
+Table tags {
+  id integer [primary key]
+  name varchar
+  description text
+}
+
+Table problem_tags {
+  problem_id integer
+  tag_id integer
+  indexes {
+    (problem_id, tag_id)
+  }
+}
+
+Table users {
+  id integer [primary key]
+  username varchar
+  email varchar
+  created_at timestamp
+}
+
+// One-to-Many relationships
+Ref: problems.difficulty_id > difficulty.id
+Ref: problem_attempts.problem_id > problems.id
+Ref: problem_attempts.user_id > users.id
+Ref: problem_attempts.status_id > status.id
+
+// Many-to-Many relationships
+Ref: problem_patterns.problem_id > problems.id
+Ref: problem_patterns.pattern_id > patterns.id
+
+Ref: problem_companies.problem_id > problems.id
+Ref: problem_companies.company_id > companies.id
+
+Ref: problem_tags.problem_id > problems.id
+Ref: problem_tags.tag_id > tags.id
