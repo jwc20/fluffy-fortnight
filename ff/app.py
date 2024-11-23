@@ -5,11 +5,19 @@ from wtforms.validators import Optional
 from collections import namedtuple
 import sqlite3
 import sqlalchemy
+#
+# def main():
+#     print("Hello from fluffy-fortnight!")
+#
+#
+# if __name__ == "__main__":
+#     main()
 
-def main():
-    print("Hello from fluffy-fortnight!")
 
+
+from ff import create_app
+
+app = create_app()
 
 if __name__ == "__main__":
-    main()
-
+    app.run()
