@@ -23,7 +23,7 @@ flask --app ff run --debug
 
 ## problems tables
 
-![db schema](./ff/static/img/db_schema.png)
+![db schema](./img/db_schema.png)
 
 
 ## job_applications tables
