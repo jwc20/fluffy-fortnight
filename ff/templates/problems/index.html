@@ -1,12 +1,69 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h1>Problems</h1>
-  <ul>
-    {% for problem in problems %}
-      <li>
-          {{ problem['title'] }}
-      </li>
-    {% endfor %}
-  </ul>
+  <h1>LeetCode Problems</h1>
+  <details>
+    <summary>Pattern Groups</summary>
+    <table>
+      <thead>
+        <tr>
+          <th>Pattern</th>
+          <th>Problems</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- TODO use named tuple -->
+        {% for pattern in patterns.items() %}
+          <tr>
+            <td>{{ pattern[0] }}</td>
+            <td>{{ pattern[1] }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </details>
+
+    <br>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Title</th>
+        <th>Difficulty</th>
+        <th>Type</th>
+        <th>Link</th>
+        <th>Patterns</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for problem in problems %}
+        <tr>
+          <td>{{ problem['leetcode_number'] }}</td>
+          <td>{{ problem['title'] }}</td>
+          <td>
+            {% if problem['difficulty'] == 1 %}
+              Easy
+            {% elif problem['difficulty'] == 2 %}
+              Medium
+            {% else %}
+              Hard
+            {% endif %}
+          </td>
+          <td>
+            {% if problem['is_premium'] %}
+              Premium
+            {% else %}
+              Free
+            {% endif %}
+          </td>
+          <td>
+            <a href="{{ problem['link'] }}" target="_blank">Solve →</a>
+          </td>
+          <td>{{ problem['patterns'] }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
 {% endblock %}
