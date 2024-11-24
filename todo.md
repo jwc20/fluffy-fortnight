@@ -20,3 +20,11 @@
 ## db
 
 - [ ] update seed data (use jetbrains db tools to generate insert queries)
+
+- [ ] add new tables
+  - [ ] auto_regulation
+  - [ ] attempt_auto_regulation
+
+
+- [ ] remove difficulty table 
+- [ ] change difficulty_id column in problems table to difficulty

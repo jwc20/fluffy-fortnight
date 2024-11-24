@@ -1,24 +1,24 @@
 -- Description: SQL script to create the database schema
 
--- Drop tables if they exist (in reverse order of dependencies)
-DROP TABLE IF EXISTS problem_tags;
-DROP TABLE IF EXISTS problem_patterns;
-DROP TABLE IF EXISTS problem_companies;
-DROP TABLE IF EXISTS problem_attempts;
-DROP TABLE IF EXISTS interview_loops;
-DROP TABLE IF EXISTS job_applications;
-DROP TABLE IF EXISTS tags;
-DROP TABLE IF EXISTS patterns;
-DROP TABLE IF EXISTS problems;
-DROP TABLE IF EXISTS difficulty;
-DROP TABLE IF EXISTS problem_status;
-DROP TABLE IF EXISTS users;
-DROP TABLE IF EXISTS companies;
-
--- Drop enum tables
-DROP TABLE IF EXISTS application_status;
-DROP TABLE IF EXISTS interview_stage;
-DROP TABLE IF EXISTS interview_status;
+-- -- Drop tables if they exist (in reverse order of dependencies)
+-- DROP TABLE IF EXISTS problem_tags;
+-- DROP TABLE IF EXISTS problem_patterns;
+-- DROP TABLE IF EXISTS problem_companies;
+-- DROP TABLE IF EXISTS problem_attempts;
+-- DROP TABLE IF EXISTS interview_loops;
+-- DROP TABLE IF EXISTS job_applications;
+-- DROP TABLE IF EXISTS tags;
+-- DROP TABLE IF EXISTS patterns;
+-- DROP TABLE IF EXISTS problems;
+-- DROP TABLE IF EXISTS difficulty;
+-- DROP TABLE IF EXISTS problem_status;
+-- DROP TABLE IF EXISTS users;
+-- DROP TABLE IF EXISTS companies;
+--
+-- -- Drop enum tables
+-- DROP TABLE IF EXISTS application_status;
+-- DROP TABLE IF EXISTS interview_stage;
+-- DROP TABLE IF EXISTS interview_status;
 
 -- Create enum tables (SQLite doesn't support ENUM)
 CREATE TABLE IF NOT EXISTS application_status (
