@@ -647,15 +647,19 @@ JOIN patterns pat ON pat.name = ppd.pattern_name;
 
 -- Initial Data: Application Status
 INSERT OR IGNORE INTO tags (name, description) VALUES
-('Neetcode 150', 'Problems from the Neetcode 150 list'),
-('Blind 75', 'Problems from the Blind 75 list'),
-('Grokking', 'Problems from the Grokking the Coding Interview course'),
-('EPI', 'Problems from the Elements of Programming Interviews (Python) book'),
-('Google', 'Problems asked in Google interviews'),
-('Meta', 'Problems asked in Meta interviews');
+('neetcode', 'Problems from the Neetcode 150 list'),
+('blind', 'Problems from the Blind 75 list'),
+('grokking', 'Problems from the Grokking the Coding Interview course'),
+('epi', 'Problems from the Elements of Programming Interviews (Python) book'),
+('google', 'Problems asked in Google interviews'),
+('meta', 'Problems asked in Meta interviews');
 
 
 -- TODO: Add tags and problem_tags relationships
+INSERT INTO problem_tags (problem_id, tag_id)
+SELECT p.id, t.id
+FROM problems p
+JOIN tags t ON t.name = 'neetcode';
 
 
 
