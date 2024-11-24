@@ -4,6 +4,11 @@ from datetime import datetime
 import click
 from flask import current_app, g
 
+# scripts/db/seed/seed.py is a script that populates the database with some initial data.
+# import the file seed.py from the scripts/db/seed directory
+
+from ff.seed.run import init_seed
+
 
 def get_db():
     if 'db' not in g:
@@ -27,12 +32,19 @@ def init_db():
     with current_app.open_resource('schema.sql') as f:
         db.executescript(f.read().decode('utf8'))
 
+def seed_db():
+    db = get_db()
+    init_seed(db, current_app)
+
 
 @click.command('init-db')
 def init_db_command():
     """Clear the existing data and create new tables."""
     init_db()
     click.echo('Initialized the database.')
+
+    seed_db()
+    click.echo('Seeded the database.')
 
 
 sqlite3.register_converter(
