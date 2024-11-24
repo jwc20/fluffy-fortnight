@@ -1,0 +1,1826 @@
+﻿id,companies,patterns
+1,"Amazon,Google,Apple,Adobe,Microsoft,Bloomberg,Facebook,Oracle,Uber,Expedia,Twitter,Nagarro,SAP,Yahoo,Cisco,Qualcomm,tcs,Goldman Sachs,Yandex,ServiceNow","Array,Hash Table"
+2,"Bloomberg,Microsoft,Amazon,Google,Facebook,Apple,Adobe,Paypal,Coupang,Oracle,Uber,VMware,Yahoo","Linked List,Math,Recursion"
+3,"Amazon,Bloomberg,Microsoft,Facebook,Apple,Adobe,eBay,Goldman Sachs,Google,Alation,VMware,Oracle,ByteDance,Yahoo,Uber,SAP,Salesforce,Coupang,Splunk,Spotify","Hash Table,Two Pointers,String,Sliding Window"
+4,"Amazon,Goldman Sachs,Facebook,Microsoft,Apple,Adobe,Google,Bloomberg,Zillow,Uber,Flipkart,Paypal","Array,Binary Search,Divide and Conquer"
+5,"Amazon,Microsoft,Wayfair,Facebook,Adobe,eBay,Google,Oracle,Goldman Sachs,Yandex,Qualcomm","String,Dynamic Programming"
+6,Microsoft,String
+7,"Amazon,Google,Apple,Facebook,Bloomberg,American Express,Microsoft,Adobe,Uber",Math
+8,"Facebook,Amazon,Microsoft,Google,Goldman Sachs,Apple,Adobe,Bloomberg,Intel","Math,String"
+9,"Microsoft,Adobe,Bloomberg,Facebook,Google,Yahoo",Math
+10,"Facebook,Amazon,Microsoft,Google,Adobe,Coursera,Apple","String,Dynamic Programming,Backtracking"
+11,"Amazon,Google,Microsoft,Facebook,Goldman Sachs,Adobe,Apple","Array,Two Pointers"
+12,"Amazon,Bloomberg,Microsoft,Adobe,Google,Apple,Oracle","Math,String"
+13,"Amazon,Roblox,Microsoft,Adobe,Facebook,LinkedIn,Google,Apple,Uber,Qualtrics,Oracle,eBay","Math,String"
+14,"Facebook,Adobe,Amazon,Apple,Bloomberg,Microsoft,Yahoo,Google",String
+15,"Amazon,Facebook,Microsoft,Bloomberg,Apple,Adobe,VMware,Google,Cisco,Tesla,Goldman Sachs,eBay","Array,Two Pointers"
+16,"Amazon,Apple,Google,Facebook,Bloomberg","Array,Two Pointers"
+17,"Amazon,Microsoft,Twilio,Facebook,Capital One,eBay,Google,Uber,Apple,Oracle,JPMorgan,Morgan Stanley,Tesla,Qualtrics,Samsung","String,Backtracking,Depth-first Search,Recursion"
+18,"Amazon,Bloomberg","Array,Hash Table,Two Pointers"
+19,"Facebook,Amazon,Microsoft,Bloomberg,Apple","Linked List,Two Pointers"
+20,"Amazon,Bloomberg,Facebook,Apple,Microsoft,Expedia,Spotify,Google,LinkedIn,Goldman Sachs,Oracle,IBM,JPMorgan,Intuit,Paypal,Atlassian,eBay,Adobe,ServiceNow,Qualcomm","String,Stack"
+21,"Amazon,Adobe,Bloomberg,Capital One,Facebook,Microsoft,Oracle,LinkedIn,Uber,VMware,IBM,ByteDance","Linked List,Recursion"
+22,"Microsoft,Facebook,Google,Bloomberg,Amazon,Apple,Adobe,Walmart Labs,ByteDance,Nvidia,Oracle","String,Backtracking"
+23,"Amazon,Facebook,Microsoft,Bloomberg,Apple,Oracle,Databricks,Google,Twitter,Uber,Adobe,Wish,ByteDance,Palantir Technologies,Tesla","Linked List,Divide and Conquer,Heap"
+24,"Microsoft,Amazon,Facebook,Google,eBay,ByteDance","Linked List,Recursion"
+25,"Amazon,Microsoft,Apple,ByteDance,Facebook,Google",Linked List
+26,"Google,Facebook,Amazon,Microsoft","Array,Two Pointers"
+27,"Adobe,Amazon,Oracle","Array,Two Pointers"
+28,"Facebook,Apple,Amazon","Two Pointers,String"
+29,"Facebook,Amazon","Math,Binary Search"
+30,"Amazon,Adobe","Hash Table,Two Pointers,String"
+31,"Facebook,Amazon,Google,Microsoft,Rubrik,Bloomberg,Apple,Morgan Stanley,Goldman Sachs,Atlassian,tcs",Array
+32,"Amazon,Facebook,Apple,ByteDance","String,Dynamic Programming"
+33,"Amazon,Facebook,Microsoft,LinkedIn,Oracle,Apple,Bloomberg,Nvidia,Expedia,Google,Adobe,Zillow,ByteDance,eBay,Cisco,ServiceNow,C3 IoT","Array,Binary Search"
+34,"Facebook,Amazon,Uber,Google,Microsoft,LinkedIn,Bloomberg,Snapchat,Oracle","Array,Binary Search"
+35,"Apple,Amazon","Array,Binary Search"
+36,"Amazon,Roblox,Uber,Apple,Facebook,Goldman Sachs,Oracle",Hash Table
+37,"DoorDash,Amazon,Oracle,Pinterest,Facebook,Intuit","Hash Table,Backtracking"
+38,"Bloomberg,Facebook,Amazon,Microsoft,Apple,Epic Systems,Tesla",String
+39,"Facebook,Airbnb,Microsoft,Bloomberg,Amazon,Apple,Uber,Adobe,eBay,Citadel,ByteDance","Array,Backtracking"
+40,"Amazon,Uber,Microsoft,ByteDance","Array,Backtracking"
+41,"Microsoft,Amazon,Facebook,Google,Oracle,Adobe,Bloomberg,Wish,Uber,Apple,Walmart Labs,Tesla,JPMorgan",Array
+42,"Goldman Sachs,Facebook,Amazon,Microsoft,Bloomberg,Apple,Databricks,Google,Qualtrics,Adobe,Oracle,Yahoo","Array,Two Pointers,Dynamic Programming,Stack"
+43,"Facebook,Microsoft,Amazon,Square,Apple,Bloomberg,Two Sigma,ByteDance","Math,String"
+44,"Adobe,Amazon,Citadel,Facebook,Microsoft,Google,Bloomberg,Snapchat","String,Dynamic Programming,Backtracking,Greedy"
+45,"Amazon,Apple","Array,Greedy"
+46,"Facebook,Amazon,ByteDance,LinkedIn,Apple,eBay,Microsoft,Paypal,Oracle",Backtracking
+47,"Facebook,Amazon,Microsoft",Backtracking
+48,"Amazon,Microsoft,Apple,Uber,Cisco,Facebook,Rubrik,Adobe,Nvidia,Google,Quora,eBay,PayTM",Array
+49,"Amazon,Microsoft,Goldman Sachs,Apple,Uber,eBay,VMware,Oracle,Yandex,Expedia,Affirm,Facebook,Google,Bloomberg,Twilio,Docusign,Cisco,Two Sigma,ByteDance,Intel","Hash Table,String"
+50,"Facebook,Microsoft,Amazon,LinkedIn,Bloomberg,Google,eBay,Goldman Sachs","Math,Binary Search"
+51,"Facebook,Microsoft,Amazon,ByteDance,Apple,Adobe",Backtracking
+52,"Amazon,Zenefits",Backtracking
+53,"Microsoft,Amazon,Apple,LinkedIn,ByteDance,Google,Adobe,Cisco,Facebook,Oracle,Splunk,Bloomberg,Uber,Paypal,JPMorgan","Array,Divide and Conquer,Dynamic Programming"
+54,"Microsoft,Apple,Intuit,Facebook,Google,Amazon,ByteDance,Expedia,Paypal,eBay",Array
+55,"Amazon,Apple,Facebook","Array,Greedy"
+56,"Facebook,JPMorgan,Amazon,Bloomberg,Apple,Google,Microsoft,Adobe,Uber,Twitter,eBay,Paypal,Cisco,Oracle,Yandex,Qualtrics,Palantir Technologies,Yahoo,Walmart Labs,VMware","Array,Sort"
+57,"Google,Twitter,Amazon,Apple,Facebook,Microsoft","Array,Sort"
+58,"Google,Bloomberg",String
+59,Microsoft,Array
+60,"Amazon,Adobe","Math,Backtracking"
+61,"Amazon,Bloomberg,Microsoft,Apple","Linked List,Two Pointers"
+62,"Microsoft,Amazon,Facebook,Google,Bloomberg,Qualtrics,VMware,Salesforce,ByteDance","Array,Dynamic Programming"
+63,"Amazon,Bloomberg,Facebook,Microsoft","Array,Dynamic Programming"
+64,"Google,Amazon,Goldman Sachs,Facebook,Apple,Snapchat,Tesla","Array,Dynamic Programming"
+65,"Facebook,LinkedIn,Oracle,Twitch","Math,String"
+66,"ByteDance,Facebook,Adobe,Amazon,Spotify,Google",Array
+67,"Facebook,Amazon,ByteDance","Math,String"
+68,"Intuit,Twilio,Uber,Karat,Indeed,Google,Amazon,Reddit,LinkedIn,Bloomberg,Microsoft,Twitter,Paypal,Apple,ByteDance,Databricks,Netflix,eBay",String
+69,"Microsoft,Bloomberg,Amazon,Uber,LinkedIn,Google","Math,Binary Search"
+70,"Expedia,Amazon,Apple,Adobe,Goldman Sachs,Google,Nvidia,Intuit",Dynamic Programming
+71,"Facebook,Google,Amazon,Microsoft","String,Stack"
+72,"Amazon,Microsoft,Google,Square,Palantir Technologies","String,Dynamic Programming"
+73,"Facebook,Microsoft,Oracle,Amazon,Expedia,Bloomberg,Goldman Sachs,Apple",Array
+74,"Amazon,Facebook,Apple,Microsoft,Nvidia","Array,Binary Search"
+75,"Microsoft,Facebook,eBay,Amazon,Oracle,Adobe,Nvidia,Expedia","Array,Two Pointers,Sort"
+76,"Facebook,Amazon,Microsoft,Lyft,Apple,LinkedIn,Google,Uber,Bloomberg,Pinterest,Snapchat,Adobe,ByteDance","Hash Table,Two Pointers,String,Sliding Window"
+77,"Facebook,Amazon",Backtracking
+78,"Facebook,Bloomberg,Amazon,Uber,Microsoft,Apple,ByteDance","Array,Backtracking,Bit Manipulation"
+79,"Amazon,Bloomberg,Intuit,Microsoft,Facebook,Snapchat,Apple,Oracle,eBay,Pinterest,Expedia","Array,Backtracking"
+80,Microsoft,"Array,Two Pointers"
+81,Amazon,"Array,Binary Search"
+82,"Amazon,Bloomberg",Linked List
+83,"Amazon,Adobe,Goldman Sachs,Qualcomm",Linked List
+84,"Amazon,Microsoft,Adobe,MAQ Software","Array,Stack"
+85,"Google,Amazon,Adobe,Bloomberg,Apple","Array,Hash Table,Dynamic Programming,Stack"
+86,"Microsoft,Amazon,Apple,Bloomberg,Facebook","Linked List,Two Pointers"
+87,Apple,"String,Dynamic Programming"
+88,"Facebook,Microsoft,Amazon,Bloomberg,Walmart Labs,IBM,Oracle,Apple,LinkedIn,Goldman Sachs,Yandex,Wish","Array,Two Pointers"
+89,Microsoft,Backtracking
+90,"Amazon,ByteDance","Array,Backtracking"
+91,"JPMorgan,Facebook,Google,Cisco,Amazon,Lyft,Microsoft,Goldman Sachs,ByteDance,Apple,Uber,Adobe","String,Dynamic Programming"
+92,"Amazon,Facebook,Microsoft,Oracle,ByteDance",Linked List
+93,"Microsoft,Oracle","String,Backtracking"
+94,"Microsoft,Facebook,Oracle,Amazon,Google","Hash Table,Stack,Tree"
+95,"Amazon,Google","Dynamic Programming,Tree"
+96,"Microsoft,Bloomberg","Dynamic Programming,Tree"
+97,"Microsoft,Apple,Coupang","String,Dynamic Programming"
+98,,
+99,"Oracle,Amazon,Microsoft,Uber","Tree,Depth-first Search"
+100,"Amazon,Google,Microsoft,Apple","Tree,Depth-first Search"
+101,"Capital One,Amazon,Yandex,Apple,Uber,Google,Microsoft","Tree,Depth-first Search,Breadth-first Search"
+102,"Bloomberg,Amazon,Facebook,Microsoft,LinkedIn,Adobe,Paypal,Google,Uber,Yahoo","Tree,Breadth-first Search"
+103,"Amazon,Microsoft,Bloomberg,Apple,Facebook,Qualtrics,eBay,Adobe,ByteDance,Google,Goldman Sachs,ServiceNow,Oracle","Stack,Tree,Breadth-first Search"
+104,"LinkedIn,Amazon,Intel","Tree,Depth-first Search,Recursion"
+105,"Amazon,Microsoft,Facebook,ByteDance,Citadel,Bloomberg,Oracle","Array,Tree,Depth-first Search"
+106,"Bloomberg,Microsoft,Google","Array,Tree,Depth-first Search"
+107,"Microsoft,Apple","Tree,Breadth-first Search"
+108,"Adobe,Google,Microsoft,Amazon,Apple,Facebook","Tree,Depth-first Search"
+109,"Facebook,Microsoft,Oracle","Linked List,Depth-first Search"
+110,Amazon,"Tree,Depth-first Search,Recursion"
+111,"Amazon,Facebook,Adobe","Tree,Depth-first Search,Breadth-first Search"
+112,"Facebook,Amazon,Microsoft,Apple,Oracle,ByteDance","Tree,Depth-first Search"
+113,"Facebook,Microsoft,Amazon,Zillow","Tree,Depth-first Search"
+114,"Facebook,Microsoft,Amazon","Tree,Depth-first Search"
+115,"Mathworks,Google,Amazon,Bloomberg","String,Dynamic Programming"
+116,"Microsoft,Bloomberg,Facebook,Google,Amazon","Tree,Depth-first Search,Breadth-first Search"
+117,"Microsoft,Amazon,Bloomberg","Tree,Depth-first Search"
+118,"Google,Adobe,Apple,Amazon,Goldman Sachs,Samsung",Array
+119,"Microsoft,Google,Amazon",Array
+120,"Amazon,Bloomberg","Array,Dynamic Programming"
+121,"Amazon,Microsoft,Facebook,Apple,Adobe,Google,tcs,Bloomberg,eBay,Uber,ByteDance,Goldman Sachs,Expedia,VMware,Yahoo,Qualtrics,Oracle,ServiceNow,Visa,Samsung","Array,Dynamic Programming"
+122,"Amazon,Apple,tcs,Microsoft,Facebook,Uber","Array,Greedy"
+123,"Amazon,Google","Array,Dynamic Programming"
+124,"Facebook,Amazon,Google,Microsoft,Bloomberg,Oracle,Adobe,Apple,Yahoo,ByteDance","Tree,Depth-first Search,Recursion"
+125,"Facebook,Microsoft,Apple,Wayfair,Amazon,Yandex,Bloomberg,Oracle","Two Pointers,String"
+126,"Uber,Amazon,Facebook,Box,Lyft,Microsoft,Google,Bloomberg","Array,String,Backtracking,Breadth-first Search"
+127,"Amazon,Facebook,Lyft,Microsoft,Google,Uber,Bloomberg,Qualtrics,Snapchat,Oracle,Yahoo,Apple,Zillow,Citadel",Breadth-first Search
+128,"Google,Amazon,Microsoft,Facebook,Bloomberg,Twitter","Array,Union Find"
+129,Facebook,"Tree,Depth-first Search"
+130,"Google,Amazon,Uber","Depth-first Search,Breadth-first Search,Union Find"
+131,"Amazon,Apple,Google","Dynamic Programming,Backtracking,Depth-first Search"
+132,"Amazon,Google",Dynamic Programming
+133,"Facebook,Amazon,Microsoft,Bloomberg,Apple,Twitter,Uber,Adobe,Qualtrics","Depth-first Search,Breadth-first Search,Graph"
+134,"Amazon,Microsoft,Apple,Hotstar,Google,Bloomberg,Citrix,C3 IoT",Greedy
+135,Amazon,Greedy
+136,"Google,Amazon,Facebook,Microsoft","Hash Table,Bit Manipulation"
+137,"Google,Adobe",Bit Manipulation
+138,"Amazon,Facebook,Microsoft,Bloomberg,eBay,Oracle,Yahoo,Qualtrics","Hash Table,Linked List"
+139,"Facebook,Amazon,Bloomberg,Microsoft,ByteDance,eBay,Qualtrics,Oracle,Google",Dynamic Programming
+140,"Facebook,Amazon,Bloomberg,ByteDance,Google,Microsoft","Dynamic Programming,Backtracking"
+141,"Microsoft,Apple,Amazon,Goldman Sachs,Facebook,Google","Linked List,Two Pointers"
+142,"Microsoft,Amazon,Apple","Linked List,Two Pointers"
+143,"Facebook,Amazon,Splunk",Linked List
+144,Amazon,"Stack,Tree"
+145,Amazon,"Stack,Tree"
+146,"Amazon,Microsoft,Facebook,Apple,Bloomberg,Intuit,Snapchat,eBay,ByteDance,Google,Oracle,Zillow,Capital One,Uber,Dropbox,Paypal,Twilio,Adobe,Walmart Labs,Goldman Sachs",Design
+147,"Apple,Microsoft","Linked List,Sort"
+148,"Facebook,Microsoft,Google,ByteDance","Linked List,Sort"
+149,"Apple,Google,LinkedIn,Amazon","Hash Table,Math"
+150,"Amazon,Oracle,LinkedIn,Google,Microsoft",Stack
+151,"Microsoft,Oracle,LinkedIn,Apple,Salesforce",String
+152,"Amazon,LinkedIn,Google,Apple,Facebook,Akuna Capital","Array,Dynamic Programming"
+153,"Facebook,Amazon,Bloomberg,Goldman Sachs,Microsoft,Oracle","Array,Binary Search"
+154,"Amazon,Google,Oracle","Array,Binary Search"
+155,"Capital One,Amazon,Bloomberg,Microsoft,Oracle,eBay,Apple,Coupang","Stack,Design"
+156,LinkedIn,Tree
+157,"Facebook,Rubrik,Microsoft",String
+158,"Facebook,Lyft,Oracle,Apple",String
+159,Facebook,"Hash Table,Two Pointers,String,Sliding Window"
+160,"Microsoft,Amazon,Facebook,Apple,ByteDance,Paypal,LinkedIn,Intuit",Linked List
+161,"Apple,Facebook,Amazon,Yandex",String
+162,"Facebook,Amazon,Google,Bloomberg,Quora","Array,Binary Search"
+163,"Facebook,Google,Amazon,Coupang",Array
+164,Amazon,Sort
+165,"Amazon,Google,Microsoft,ByteDance",String
+166,"Goldman Sachs,Facebook","Hash Table,Math"
+167,"Amazon,Oracle,Microsoft","Array,Two Pointers,Binary Search"
+168,"Microsoft,Facebook",Math
+169,"Amazon,Microsoft,Bloomberg,Rubrik,Splunk,Apple,ByteDance,GoDaddy","Array,Divide and Conquer,Bit Manipulation"
+170,LinkedIn,"Hash Table,Design"
+171,Goldman Sachs,Math
+172,"Bloomberg,Facebook,Amazon",Math
+173,"Facebook,ByteDance,Microsoft,Bloomberg,Google,Oracle,Amazon,Apple,Adobe","Stack,Tree,Design"
+174,JPMorgan,"Binary Search,Dynamic Programming"
+175,"Adobe,Apple",
+176,"Amazon,Google,Apple",
+177,Infosys,
+178,"Apple,Amazon,Facebook,Yahoo",
+179,"Amazon,Microsoft,VMware",Sort
+180,Amazon,
+181,Amazon,
+182,Microsoft,
+183,Bloomberg,
+184,Amazon,
+185,"Amazon,Uber",
+186,Microsoft,String
+187,"Amazon,Google","Hash Table,Bit Manipulation"
+188,"Amazon,Google,Uber",Dynamic Programming
+189,"Microsoft,Apple,Amazon",Array
+190,"Apple,Google",Bit Manipulation
+191,"Box,Cisco,Microsoft,Qualcomm",Bit Manipulation
+192,Apple,
+193,"Amazon,Apple",
+194,,
+195,"Apple,Google,Adobe",
+196,Amazon,
+197,Adobe,
+198,"Cisco,Amazon,Microsoft,Oracle,Bloomberg,ByteDance,Splunk",Dynamic Programming
+199,"Facebook,Amazon,ByteDance,Bloomberg,Microsoft","Tree,Depth-first Search,Breadth-first Search,Recursion,Queue"
+200,"Amazon,Bloomberg,Microsoft,Oracle,Facebook,Apple,Uber,Google,Yandex,DoorDash,Qualtrics,Snapchat,Citadel,Expedia,LinkedIn,eBay,Goldman Sachs,VMware,Splunk,Tesla","Depth-first Search,Breadth-first Search,Union Find"
+201,Adobe,Bit Manipulation
+202,"Apple,Adobe,Barclays,ByteDance","Hash Table,Math"
+203,"Facebook,Amazon,Google,Microsoft,Apple",Linked List
+204,"Apple,Capital One,Amazon,Microsoft,Cisco","Hash Table,Math"
+205,"Amazon,Apple,Intel,Google",Hash Table
+206,"Adobe,Amazon,Facebook,Apple,Microsoft,Qualcomm,Yandex,Google,Uber,Oracle,Bloomberg,IBM,Cisco,Goldman Sachs,ByteDance",Linked List
+207,"Amazon,Intuit,Facebook,Karat,Microsoft,ByteDance,Bloomberg,Google","Depth-first Search,Breadth-first Search,Graph,Topological Sort"
+208,"Amazon,Pinterest,Google,Microsoft,Oracle,Facebook,Apple,Goldman Sachs,Qualtrics","Design,Trie"
+209,"Goldman Sachs,Amazon,Bloomberg,Facebook,Microsoft,ByteDance","Array,Two Pointers,Binary Search"
+210,"Amazon,DoorDash,Microsoft,Google,Snapchat,Oracle,Intuit,Karat,Facebook,Pinterest,Wayfair,Robinhood","Depth-first Search,Breadth-first Search,Graph,Topological Sort"
+211,"Facebook,Google,Oracle,Amazon","Backtracking,Depth-first Search,Design,Trie"
+212,"Amazon,Microsoft,Uber,Apple,Google,Facebook,Snapchat,Twitter","Backtracking,Trie"
+213,eBay,Dynamic Programming
+214,Microsoft,String
+215,"Facebook,Amazon,Walmart Labs,Apple,Microsoft,Bloomberg,ByteDance,LinkedIn,Adobe,Google,Spotify,Zillow","Divide and Conquer,Heap"
+216,"Google,Microsoft,Amazon,Bloomberg","Array,Backtracking"
+217,"Apple,Microsoft,Adobe","Array,Hash Table"
+218,"Microsoft,Amazon,Google,Twitter,Uber","Divide and Conquer,Heap,Binary Indexed Tree,Segment Tree,Line Sweep"
+219,"Facebook,Amazon","Array,Hash Table"
+220,Facebook,"Sort,Ordered Map"
+221,"Amazon,IBM,Google,Twitter,ByteDance,Apple",Dynamic Programming
+222,"Google,Bloomberg,Microsoft","Binary Search,Tree"
+223,Zillow,Math
+224,"Amazon,Roblox,Facebook,Indeed,Karat,Microsoft,Google,ByteDance,Uber,Wish","Math,Stack"
+225,"Amazon,Paypal","Stack,Design"
+226,"Microsoft,Amazon,Google,Facebook,eBay,Paypal",Tree
+227,"Amazon,Facebook,Microsoft,Roblox,Snapchat,Uber","String,Stack"
+228,"Yandex,Facebook,Bloomberg,Qualtrics",Array
+229,Google,Array
+230,"Amazon,Facebook,Adobe,Microsoft,Oracle","Binary Search,Tree"
+231,Apple,"Math,Bit Manipulation"
+232,"Amazon,Microsoft,Apple,Facebook,Citrix,Morgan Stanley","Stack,Design"
+233,Amazon,Math
+234,"Microsoft,Facebook,Amazon,Adobe,Capital One,Google,Oracle,Bloomberg,Uber,Snapchat,PayTM","Linked List,Two Pointers"
+235,"Amazon,Facebook,LinkedIn,Oracle,Microsoft",Tree
+236,"Facebook,Microsoft,Amazon,Oracle,LinkedIn,Apple,Bloomberg,Intuit,Adobe,Google,Uber,Zillow,Palantir Technologies,Atlassian",Tree
+237,"Adobe,Qualcomm",Linked List
+238,"Facebook,Amazon,Apple,Asana,Lyft,Microsoft,Uber,Adobe,VMware,Nvidia,Oracle,Intel",Array
+239,"Amazon,ByteDance,Dropbox,Facebook,Google,Citadel,Bloomberg,Microsoft,Akuna Capital,IBM,Twitter","Heap,Sliding Window,Dequeue"
+240,"Amazon,ByteDance,Microsoft,Bloomberg,Facebook","Binary Search,Divide and Conquer"
+241,"Microsoft,Flipkart",Divide and Conquer
+242,"Bloomberg,Facebook,Microsoft,Amazon,Apple,Oracle,Google,Goldman Sachs,Adobe,Cisco,Paypal,Qualcomm","Hash Table,Sort"
+243,"LinkedIn,Microsoft,Goldman Sachs",
+244,"LinkedIn,Amazon,eBay","Hash Table,Design"
+245,LinkedIn,Array
+246,"Facebook,Google,Microsoft","Hash Table,Math"
+247,"Facebook,Google","Math,Recursion"
+248,Google,"Math,Recursion"
+249,"Facebook,Google","Hash Table,String"
+250,"Google,eBay,Box",Tree
+251,Airbnb,Design
+252,"Facebook,Microsoft,Bloomberg,Amazon,Adobe,Karat",Sort
+253,"Amazon,Bloomberg,Facebook,Google,Microsoft,Oracle,Uber,Yandex,ByteDance,Twitter,Apple,Walmart Labs,Adobe,Expedia,eBay","Heap,Greedy,Sort"
+254,LinkedIn,Backtracking
+255,VMware,"Stack,Tree"
+256,"Roblox,LinkedIn,Google",Dynamic Programming
+257,"Facebook,Google,Apple,Bloomberg","Tree,Depth-first Search"
+258,"Amazon,Google",Math
+259,"IBM,Citadel","Array,Two Pointers"
+260,Facebook,Bit Manipulation
+261,"Amazon,Qualtrics,Microsoft","Depth-first Search,Breadth-first Search,Union Find,Graph"
+262,Uber,
+263,Adobe,Math
+264,"Amazon,Adobe","Math,Dynamic Programming,Heap"
+265,"LinkedIn,Walmart Labs",Dynamic Programming
+266,"Facebook,Microsoft",Hash Table
+267,Microsoft,Backtracking
+268,"Capital One,Amazon,Facebook,Apple,Microsoft,Oracle,Goldman Sachs,Cisco,Arista Networks","Array,Math,Bit Manipulation"
+269,"Facebook,Amazon,Airbnb,Pinterest,Google,Microsoft,ByteDance","Graph,Topological Sort"
+270,"Facebook,Bloomberg,Amazon","Binary Search,Tree"
+271,Microsoft,String
+272,"LinkedIn,Oracle","Stack,Tree"
+273,"Facebook,Amazon,Microsoft,Palantir Technologies,Square,Adobe,Oracle","Math,String"
+274,"Nvidia,Goldman Sachs","Hash Table,Sort"
+275,Goldman Sachs,Binary Search
+276,"Google,JPMorgan",Dynamic Programming
+277,"Microsoft,Amazon,Facebook,LinkedIn,Apple,Snapchat",Array
+278,Facebook,Binary Search
+279,"Amazon,Google,Adobe","Math,Dynamic Programming,Breadth-first Search"
+280,Facebook,"Array,Sort"
+281,Yandex,Design
+282,"Facebook,Citadel",Divide and Conquer
+283,"Facebook,Bloomberg,Microsoft,Adobe,Capital One,Apple,Amazon,Google,eBay,SAP,Uber,Paypal,Cisco,Qualcomm,Yandex","Array,Two Pointers"
+284,"Apple,Google,Amazon",Design
+285,"Amazon,Microsoft",Tree
+286,"ByteDance,Facebook,Amazon,Microsoft",Breadth-first Search
+287,"Microsoft,Amazon,Apple,Google,Bloomberg,Paypal,Goldman Sachs","Array,Two Pointers,Binary Search"
+288,Facebook,"Hash Table,Design"
+289,"Dropbox,Amazon,Reddit,Opendoor,Microsoft,Square",Array
+290,Apple,Hash Table
+291,Amazon,Backtracking
+292,Bloomberg,"Brainteaser,Minimax"
+293,Google,String
+294,Google,"Backtracking,Minimax"
+295,"Amazon,Facebook,Microsoft,ByteDance,Google,Apple,eBay,Bloomberg,Salesforce,Goldman Sachs,Nvidia,Uber,Walmart Labs,VMware,Adobe,Twilio","Heap,Design"
+296,"Google,Amazon,Bloomberg,Microsoft","Math,Sort"
+297,"Facebook,Microsoft,Amazon,LinkedIn,Uber,Bloomberg,eBay,Quora,Qualtrics,Google,Oracle,Citadel,Walmart Labs","Tree,Design"
+298,Google,Tree
+299,"Google,ByteDance,eBay",Hash Table
+300,"Apple,Amazon,Facebook,Bloomberg,Citrix,Google,ByteDance,Twitter,Microsoft,Nagarro","Binary Search,Dynamic Programming"
+301,"Facebook,Bloomberg,ByteDance,Amazon,Qualtrics","Depth-first Search,Breadth-first Search"
+302,Google,Binary Search
+303,Facebook,Dynamic Programming
+304,"Facebook,Google,Lyft,Microsoft,Amazon",Dynamic Programming
+305,Amazon,Union Find
+306,"Epic Systems,Google",Backtracking
+307,Facebook,"Binary Indexed Tree,Segment Tree"
+308,Google,"Binary Indexed Tree,Segment Tree"
+309,"Amazon,Yahoo",Dynamic Programming
+310,Facebook,"Breadth-first Search,Graph"
+311,"Facebook,Apple,Wish",Hash Table
+312,"Adobe,Bloomberg,Amazon,Google,Codenation","Divide and Conquer,Dynamic Programming"
+313,"Amazon,Google","Math,Heap"
+314,"Facebook,Bloomberg,Amazon","Depth-first Search,Breadth-first Search"
+315,"Google,Amazon,Apple,Bloomberg","Binary Search,Divide and Conquer,Sort,Binary Indexed Tree,Segment Tree"
+316,"Amazon,Bloomberg,Google","String,Stack,Greedy"
+317,"Facebook,Google,Amazon,Qualtrics",Breadth-first Search
+318,Google,Bit Manipulation
+319,"Microsoft,Apple","Math,Brainteaser"
+320,ByteDance,"Backtracking,Bit Manipulation"
+321,Apple,"Dynamic Programming,Greedy"
+322,"Amazon,Bloomberg,Goldman Sachs,Walmart Labs,Apple,Microsoft,Airbnb,Uber,Oracle,Facebook,BlackRock",Dynamic Programming
+323,"Amazon,Facebook,LinkedIn,Microsoft,Apple","Depth-first Search,Breadth-first Search,Union Find,Graph"
+324,Amazon,Sort
+325,"Facebook,Microsoft",Hash Table
+326,Google,Math
+327,"Amazon,Google","Binary Search,Divide and Conquer,Sort,Binary Indexed Tree,Segment Tree"
+328,"Bloomberg,Oracle,Facebook,Google",Linked List
+329,"Google,Facebook,Bloomberg,Amazon,ByteDance,DoorDash","Depth-first Search,Topological Sort,Memoization"
+330,Google,Greedy
+331,Google,Stack
+332,"Uber,Twilio,Amazon,Bloomberg,Facebook,Microsoft,Intuit,Expedia,Qualtrics,Twitter,Google,eBay,VMware","Depth-first Search,Graph"
+333,"Facebook,Bloomberg",Tree
+334,Google,
+335,"Amazon,Google",Math
+336,"Airbnb,ByteDance,Facebook","Hash Table,String,Trie"
+337,Amazon,"Dynamic Programming,Tree,Depth-first Search"
+338,"Amazon,Blizzard","Dynamic Programming,Bit Manipulation"
+339,"Facebook,LinkedIn,Amazon","Depth-first Search,Breadth-first Search"
+340,"Facebook,Uber,Microsoft,Wish,Twitter","Hash Table,Two Pointers,String,Sliding Window"
+341,"Facebook,Amazon,Airbnb,Apple,LinkedIn,Bloomberg,Oracle","Stack,Design"
+342,Two Sigma,Bit Manipulation
+343,"Google,Adobe","Math,Dynamic Programming"
+344,"Apple,Microsoft,Goldman Sachs,Amazon,Adobe,Bloomberg","Two Pointers,String"
+345,"Facebook,Google,Amazon","Two Pointers,String"
+346,"Google,Apple,Spotify,Indeed,Amazon","Design,Queue"
+347,"Capital One,Facebook,Amazon,Oracle,Apple,Bloomberg,Google,ByteDance,Yelp,Microsoft,Walmart Labs,eBay","Hash Table,Heap"
+348,"Amazon,Microsoft,Facebook,Intuit,Apple,Oracle",Design
+349,"Facebook,Amazon,Bloomberg,ByteDance,Apple","Hash Table,Two Pointers,Binary Search,Sort"
+350,"Amazon,Facebook,Oracle,Nutanix,Microsoft","Hash Table,Two Pointers,Binary Search,Sort"
+351,Microsoft,"Dynamic Programming,Backtracking"
+352,Oracle,"Binary Search,Ordered Map"
+353,"Amazon,Microsoft","Design,Queue"
+354,"Google,Amazon,ByteDance,Uber","Binary Search,Dynamic Programming"
+355,"Paypal,Amazon,Microsoft,Yelp","Hash Table,Heap,Design"
+356,Yandex,"Hash Table,Math"
+357,Google,"Math,Dynamic Programming,Backtracking"
+358,"Microsoft,Facebook","Hash Table,Heap,Greedy"
+359,"Google,Apple,Amazon,Bloomberg,Microsoft,Oracle","Hash Table,Design"
+360,Google,"Math,Two Pointers,Sort"
+361,Google,Dynamic Programming
+362,"Amazon,Microsoft,Apple,Bloomberg,Google,Yandex",Design
+363,Roblox,"Binary Search,Dynamic Programming,Queue"
+364,LinkedIn,Depth-first Search
+365,"Lyft,Google",Math
+366,"LinkedIn,Amazon","Tree,Depth-first Search"
+367,"LinkedIn,Facebook,Adobe","Math,Binary Search"
+368,Amazon,"Math,Dynamic Programming"
+369,"Google,Amazon","Linked List,Recursion"
+370,Google,Array
+371,Facebook,Bit Manipulation
+372,,
+373,"Amazon,Walmart Labs",Heap
+374,Apple,Binary Search
+375,Google,"Dynamic Programming,Minimax"
+376,Microsoft,"Dynamic Programming,Greedy"
+377,"Bloomberg,Wish,Apple",Dynamic Programming
+378,"Facebook,Google,Amazon","Binary Search,Heap"
+379,Google,"Linked List,Design"
+380,"Amazon,Bloomberg,Facebook,Twitter,Microsoft,Oracle,Affirm,Yandex,Two Sigma,HRT,LinkedIn,Nvidia,Snapchat,Databricks,Adobe,Zillow","Array,Hash Table,Design"
+381,"Facebook,Affirm","Array,Hash Table,Design"
+382,Amazon,Reservoir Sampling
+383,"Spotify,Amazon,Microsoft,Visa",String
+384,"Google,Apple,Microsoft",
+385,"Google,Airbnb","String,Stack"
+386,"Pony.ai,ByteDance",
+387,"Bloomberg,Goldman Sachs,Amazon,Facebook,Microsoft,Google,Apple,Adobe","Hash Table,String"
+388,"Amazon,Facebook,Google",
+389,"Google,Amazon","Hash Table,Bit Manipulation"
+390,"Goldman Sachs,Bloomberg",
+391,Apple,Line Sweep
+392,Bloomberg,"Binary Search,Dynamic Programming,Greedy"
+393,"Palantir Technologies,Facebook,Amazon",Bit Manipulation
+394,"Bloomberg,Google,Amazon,Oracle,ByteDance,Apple,Walmart Labs,VMware,eBay,Cisco","Stack,Depth-first Search"
+395,Facebook,"Divide and Conquer,Recursion,Sliding Window"
+396,Google,Math
+397,Google,"Math,Bit Manipulation"
+398,Facebook,Reservoir Sampling
+399,"Bloomberg,Amazon,Uber,Google,Facebook,Microsoft,Apple","Union Find,Graph"
+400,Facebook,Math
+401,"Apple,Google","Backtracking,Bit Manipulation"
+402,"Amazon,Microsoft,Adobe,Oracle","Stack,Greedy"
+403,"Amazon,Microsoft,ByteDance,Google",Dynamic Programming
+404,"Adobe,Apple",Tree
+405,Facebook,Bit Manipulation
+406,"Google,Facebook",Greedy
+407,"Google,Amazon","Heap,Breadth-first Search"
+408,Facebook,String
+409,Wayfair,Hash Table
+410,"Amazon,Google","Binary Search,Dynamic Programming"
+411,Google,"Backtracking,Bit Manipulation"
+412,"Microsoft,Apple",
+413,Amazon,"Math,Dynamic Programming"
+414,Facebook,Array
+415,"Facebook,Adobe,Google,Wayfair,Microsoft,Square,Uber,Bloomberg,Amazon,Oracle",String
+416,"Amazon,Facebook",Dynamic Programming
+417,"ByteDance,Google,Amazon","Depth-first Search,Breadth-first Search"
+418,Google,Dynamic Programming
+419,"Facebook,Microsoft,Google,Twitch",
+420,"Google,Oracle,Microsoft",
+421,VMware,"Bit Manipulation,Trie"
+422,Bloomberg,
+423,Expedia,Math
+424,"Google,Amazon,Wish","Two Pointers,Sliding Window"
+425,Bloomberg,"Backtracking,Trie"
+426,"Facebook,Microsoft,Google,VMware,Amazon,Expedia","Linked List,Divide and Conquer,Tree"
+427,Uber,
+428,"Microsoft,Apple,Google,Amazon",Tree
+429,Amazon,"Tree,Breadth-first Search"
+430,"Bloomberg,Facebook","Linked List,Depth-first Search"
+431,Flipkart,Tree
+432,Amazon,Design
+433,Amazon,
+434,,
+435,"Facebook,ByteDance,Amazon",Greedy
+436,,
+437,"Amazon,ByteDance,Adobe",Tree
+438,"Facebook,Amazon,Bloomberg,Microsoft,Snapchat,Apple",Hash Table
+439,Snapchat,"Stack,Depth-first Search"
+440,"ByteDance,Hulu",
+441,Bloomberg,"Math,Binary Search"
+442,"Amazon,Facebook,Microsoft,Bloomberg,Docusign",Array
+443,"Goldman Sachs,Yandex,Microsoft,Apple,Citrix,Facebook,Amazon,eBay,Redfin,Google,VMware,Cisco,Nvidia",String
+444,Google,"Graph,Topological Sort"
+445,"Microsoft,Amazon,Bloomberg,Facebook,Apple,Adobe,Uber,ByteDance",Linked List
+446,Google,Dynamic Programming
+447,Google,"Hash Table,Math"
+448,Amazon,Array
+449,"Facebook,Amazon,Microsoft,ByteDance",Tree
+450,"Bloomberg,Oracle,Google",Tree
+451,"Bloomberg,Amazon,Facebook","Hash Table,Heap"
+452,"Facebook,Google","Greedy,Sort"
+453,"JPMorgan,Microsoft,Apple,Swiggy",Math
+454,Amazon,"Hash Table,Binary Search"
+455,Amazon,Greedy
+456,Amazon,Stack
+457,Apple,"Array,Two Pointers"
+458,,
+459,Google,String
+460,"Amazon,Microsoft,Google,Citadel,Bloomberg,Salesforce,Twitch",Design
+461,Adobe,Bit Manipulation
+462,Microsoft,Math
+463,Facebook,Hash Table
+464,LinkedIn,"Dynamic Programming,Minimax"
+465,"Google,Uber",
+466,Amazon,Dynamic Programming
+467,"Google,MAQ Software",Dynamic Programming
+468,"Cisco,Facebook,Microsoft,Oracle",String
+469,Google,Math
+470,"Apple,Microsoft","Random,Rejection Sampling"
+471,"Google,Amazon",Dynamic Programming
+472,Amazon,"Dynamic Programming,Depth-first Search,Trie"
+473,Amazon,Depth-first Search
+474,Google,Dynamic Programming
+475,Google,Binary Search
+476,"Apple,Cloudera",Bit Manipulation
+477,Facebook,Bit Manipulation
+478,Leap Motion,"Math,Random,Rejection Sampling"
+479,Yahoo,
+480,"Facebook,Spotify,JPMorgan,Google,Amazon,Flipkart,Adobe",Sliding Window
+481,Google,
+482,Capital One,
+483,Google,"Math,Binary Search"
+484,Google,Greedy
+485,"Google,Amazon",Array
+486,"Google,Uber,Amazon","Dynamic Programming,Minimax"
+487,"Yandex,Zillow",Two Pointers
+488,"Salesforce,Bloomberg",Depth-first Search
+489,"Facebook,Google,Amazon",Depth-first Search
+490,"Amazon,Microsoft,Bloomberg","Depth-first Search,Breadth-first Search"
+491,Google,Depth-first Search
+492,,
+493,"ByteDance,Amazon,Google","Binary Search,Divide and Conquer,Sort,Binary Indexed Tree,Segment Tree"
+494,"Facebook,Amazon,Adobe","Dynamic Programming,Depth-first Search"
+495,Salesforce,Array
+496,"Amazon,Microsoft",Stack
+497,Google,"Binary Search,Random"
+498,"Facebook,Amazon",
+499,Google,"Depth-first Search,Breadth-first Search"
+500,Mathworks,Hash Table
+501,Google,Tree
+502,Amazon,"Heap,Greedy"
+503,"Amazon,Bloomberg,Apple,Facebook",Stack
+504,Garena,
+505,"Amazon,Facebook,Google,Snapchat,Oracle","Depth-first Search,Breadth-first Search"
+506,Google,
+507,Amazon,Math
+508,Amazon,"Hash Table,Tree"
+509,"JPMorgan,Amazon,Google,Apple,Facebook",Array
+510,"Microsoft,Bloomberg",Tree
+511,GSN Games,
+512,GSN Games,
+513,"Bloomberg,Adobe","Tree,Depth-first Search,Breadth-first Search"
+514,DE Shaw,"Divide and Conquer,Dynamic Programming,Depth-first Search"
+515,Facebook,"Tree,Depth-first Search,Breadth-first Search"
+516,Amazon,Dynamic Programming
+517,Amazon,"Math,Dynamic Programming"
+518,"Amazon,Microsoft,Bloomberg,Apple,Adobe,Qualtrics,ByteDance",
+519,Google,Random
+520,Google,String
+521,Google,"String,Brainteaser"
+522,Google,String
+523,"Facebook,Amazon","Math,Dynamic Programming"
+524,Goldman Sachs,"Two Pointers,Sort"
+525,"Facebook,Amazon",Hash Table
+526,"Mathworks,C3 IoT,Cisco","Backtracking,Depth-first Search"
+527,Google,"String,Sort"
+528,"Facebook,Google,ByteDance,Bloomberg,Apple,Roblox,LinkedIn,Amazon,Expedia,Yelp,Snapchat","Binary Search,Random"
+529,"Uber,Google,Amazon,Facebook,Zillow,LiveRamp","Depth-first Search,Breadth-first Search"
+530,Google,Tree
+531,Microsoft,"Array,Depth-first Search"
+532,"Twitter,Citrix,Amazon,Goldman Sachs,Expedia","Array,Two Pointers"
+533,Google,Array
+534,GSN Games,
+535,"Microsoft,Amazon","Hash Table,Math"
+536,Facebook,"String,Tree"
+537,Amazon,"Math,String"
+538,"Facebook,Amazon","Tree,Depth-first Search,Binary Search Tree,Recursion"
+539,Palantir Technologies,String
+540,"Amazon,Facebook,Twitter",Binary Search
+541,Apple,String
+542,"Amazon,Microsoft","Depth-first Search,Breadth-first Search"
+543,"Facebook,Microsoft,Bloomberg,Amazon,Google,ByteDance,Oracle",Tree
+544,Google,"String,Recursion"
+545,"Microsoft,Amazon,eBay,Facebook,Oracle",Tree
+546,"Apple,Amazon","Dynamic Programming,Depth-first Search"
+547,"Amazon,Two Sigma,Goldman Sachs,Dropbox,Facebook,Audible","Depth-first Search,Union Find"
+548,Facebook,Array
+549,"Facebook,Google",Tree
+550,"Facebook,GSN Games",
+551,Google,String
+552,Google,Dynamic Programming
+553,Amazon,"Math,String"
+554,Oracle,Hash Table
+555,Alibaba,String
+556,ByteDance,String
+557,"Amazon,Bloomberg",String
+558,Sumologic,
+559,"Google,Amazon","Tree,Depth-first Search,Breadth-first Search"
+560,"Facebook,Yandex,Amazon,Bloomberg,Microsoft,ByteDance,Google,Adobe,Oracle","Array,Hash Table"
+561,Apple,Array
+562,Google,Array
+563,Indeed,"Tree,Depth-first Search,Recursion"
+564,"Microsoft,Amazon",String
+565,Adobe,Array
+566,Mathworks,Array
+567,"Facebook,Microsoft,Adobe,Amazon,Yandex","Two Pointers,Sliding Window"
+568,"Google,Facebook",Dynamic Programming
+569,Google,
+570,Amazon,
+571,Pinterest,
+572,"Amazon,Microsoft,Facebook",Tree
+573,Square,Math
+574,,
+575,"Microsoft,LiveRamp",Hash Table
+576,Amazon,"Dynamic Programming,Depth-first Search"
+577,Netsuite,
+578,Facebook,
+579,Amazon,
+580,Twitter,
+581,"Amazon,Microsoft",Array
+582,Bloomberg,"Tree,Queue"
+583,Google,String
+584,Amazon,
+585,Twitter,
+586,Amazon,
+587,Google,Geometry
+588,"Amazon,Microsoft,Citadel,Google",Design
+589,,
+590,Amazon,Tree
+591,Microsoft,"String,Stack"
+592,"IXL,Goldman Sachs",Math
+593,"Pure Storage,Google",Math
+594,"Apple,LiveRamp",Hash Table
+595,Bloomberg,
+596,,
+597,Facebook,
+598,IXL,Math
+599,"Oracle,Yelp",Hash Table
+600,Pocket Gems,Dynamic Programming
+601,Amazon,
+602,Amazon,
+603,Amazon,
+604,"Google,Amazon",Design
+605,"LinkedIn,Facebook","Array,Greedy"
+606,Bloomberg,"String,Tree"
+607,,
+608,"Uber,Twitter",
+609,"Dropbox,Amazon","Hash Table,String"
+610,Facebook,
+611,"Bloomberg,LinkedIn,ByteDance",Array
+612,Microsoft,
+613,,
+614,"Facebook,Databricks",
+615,Amazon,
+616,Facebook,String
+617,"Amazon,Google,Facebook,Apple",Tree
+618,Amazon,
+619,,
+620,,
+621,"Facebook,Rubrik,Amazon,Pinterest,Google,Microsoft,Bloomberg,Airtel","Array,Greedy,Queue"
+622,"Facebook,Amazon,Microsoft,Rubrik,Oracle","Design,Queue"
+623,Gilt Groupe,Tree
+624,Yahoo,"Array,Hash Table"
+625,Tencent,"Math,Recursion"
+626,Amazon,
+627,Amazon,
+628,Amazon,"Array,Math"
+629,Works Applications,Dynamic Programming
+630,"Google,Microsoft",Greedy
+631,Opendoor,Design
+632,Amazon,"Hash Table,Two Pointers,String"
+633,Apple,Math
+634,"Amazon,IXL",Math
+635,,"String,Design"
+636,"Facebook,Amazon,Microsoft,LinkedIn,Google",Stack
+637,Facebook,Tree
+638,Google,"Dynamic Programming,Depth-first Search"
+639,"Google,Facebook",Dynamic Programming
+640,Amazon,Math
+641,Amazon,"Design,Queue"
+642,"Microsoft,Amazon,Lyft,Google","Design,Trie"
+643,Amazon,Array
+644,Google,"Array,Binary Search"
+645,"Apple,Amazon","Hash Table,Math"
+646,"Amazon,Uber",Dynamic Programming
+647,"Facebook,Goldman Sachs,Expedia,Google,Twitter,Microsoft,Bloomberg,Docusign","String,Dynamic Programming"
+648,Uber,"Hash Table,Trie"
+649,Valve,Greedy
+650,"Amazon,Microsoft",Dynamic Programming
+651,"Google,Microsoft","Math,Dynamic Programming,Greedy"
+652,"Google,Amazon",Tree
+653,Microsoft,Tree
+654,Apple,Tree
+655,Uber,Tree
+656,Google,Dynamic Programming
+657,"Amazon,Goldman Sachs",String
+658,"Facebook,Microsoft,Google,Paypal",Binary Search
+659,Uber,"Heap,Greedy"
+660,Houzz,Math
+661,Apple,Array
+662,"Microsoft,Bloomberg",Tree
+663,Amazon,Tree
+664,NetEase,"Dynamic Programming,Depth-first Search"
+665,Microsoft,Array
+666,Facebook,Tree
+667,Google,Array
+668,"Uber,Google",Binary Search
+669,"Google,Facebook,Apple,Samsung","Tree,Recursion"
+670,Facebook,"Array,Math"
+671,"LinkedIn,Microsoft,Adobe",Tree
+672,Microsoft,Math
+673,"Bloomberg,Amazon,Facebook",Dynamic Programming
+674,Amazon,Array
+675,"Amazon,Apple",Breadth-first Search
+676,ByteDance,"Hash Table,Trie"
+677,Akuna Capital,Trie
+678,"Salesforce,Facebook,Amazon,Uber,Oracle",String
+679,Amazon,Depth-first Search
+680,"Facebook,Oracle,Microsoft,eBay,Wish",String
+681,Amazon,String
+682,Amazon,Stack
+683,Google,Ordered Map
+684,Amazon,"Tree,Union Find,Graph"
+685,Amazon,"Tree,Depth-first Search,Union Find,Graph"
+686,"Google,Facebook,Amazon",String
+687,Bloomberg,"Tree,Recursion"
+688,"Goldman Sachs,Amazon",Dynamic Programming
+689,Facebook,"Array,Dynamic Programming"
+690,"Google,Microsoft","Hash Table,Depth-first Search,Breadth-first Search"
+691,Facebook,"Dynamic Programming,Backtracking"
+692,"Amazon,Bloomberg,Google,Facebook,Apple,Oracle,Microsoft","Hash Table,Heap,Trie"
+693,Yahoo,Bit Manipulation
+694,"Amazon,Bloomberg,Facebook,Microsoft","Hash Table,Depth-first Search,Breadth-first Search"
+695,"Google,DoorDash,Amazon,Facebook,Microsoft,Oracle,Bloomberg,eBay","Array,Depth-first Search"
+696,"JPMorgan,SAP",String
+697,"Bloomberg,Twitter",Array
+698,"LinkedIn,Amazon,Google,Facebook,Adobe","Dynamic Programming,Recursion"
+699,"Amazon,Uber,Square","Segment Tree,Ordered Map"
+700,"Apple,Uber",Tree
+701,"Amazon,Microsoft,Google",Tree
+702,"Microsoft,Morgan Stanley",Binary Search
+703,"Amazon,Microsoft,Box,Facebook","Heap,Design"
+704,"Microsoft,Facebook,Amazon",Binary Search
+705,"Google,Adobe","Hash Table,Design"
+706,"Goldman Sachs,Amazon,Microsoft,Apple,LinkedIn,Oracle,Google,ServiceNow,Uber,VMware,ByteDance,eBay","Hash Table,Design"
+707,"Microsoft,Amazon","Linked List,Design"
+708,"Facebook,Amazon,Microsoft",Linked List
+709,"Google,Adobe,Apple",String
+710,Two Sigma,"Hash Table,Binary Search,Sort,Random"
+711,Amazon,"Hash Table,Depth-first Search"
+712,TripleByte,Dynamic Programming
+713,"Bloomberg,LinkedIn","Array,Two Pointers"
+714,Amazon,"Array,Dynamic Programming,Greedy"
+715,"Google,Amazon","Segment Tree,Ordered Map"
+716,"Lyft,LinkedIn,Amazon,Microsoft,Facebook,Pure Storage,Twitter",Design
+717,Amazon,Array
+718,"Karat,Indeed,Intuit,Apple,Google,Amazon","Array,Hash Table,Binary Search,Dynamic Programming"
+719,"Google,Amazon","Array,Binary Search,Heap"
+720,"Goldman Sachs,Facebook","Hash Table,Trie"
+721,"Facebook,Google,Amazon,Microsoft,Twitter,LinkedIn","Depth-first Search,Union Find"
+722,"Microsoft,Google,Databricks",String
+723,Bloomberg,"Array,Two Pointers"
+724,"Facebook,Goldman Sachs,Twitter,Apple",Array
+725,"Amazon,Adobe",Linked List
+726,"ByteDance,Amazon,Pinterest,Microsoft","Hash Table,Stack,Recursion"
+727,"Google,Amazon,Facebook","Dynamic Programming,Sliding Window"
+728,Adobe,Math
+729,"Google,Intuit,Amazon",Array
+730,"LinkedIn,Google,Facebook","String,Dynamic Programming"
+731,Bloomberg,Ordered Map
+732,Google,"Segment Tree,Ordered Map"
+733,"Amazon,Microsoft,Google",Depth-first Search
+734,Facebook,Hash Table
+735,"Amazon,Lyft,ByteDance,Oracle",Stack
+736,Google,String
+737,Amazon,"Depth-first Search,Union Find"
+738,SAP,Greedy
+739,"Facebook,Bloomberg,Amazon,ByteDance,Google,Adobe,Microsoft,Paypal,Oracle,Salesforce,Twitter","Hash Table,Stack"
+740,Goldman Sachs,Dynamic Programming
+741,"Swiggy,Facebook,Mathworks",Dynamic Programming
+742,Facebook,Tree
+743,Amazon,"Heap,Depth-first Search,Breadth-first Search,Graph"
+744,LinkedIn,Binary Search
+745,"Amazon,Facebook",Trie
+746,"Amazon,Apple","Array,Dynamic Programming"
+747,Google,Array
+748,Google,Hash Table
+749,Accolite,Depth-first Search
+750,Facebook,Dynamic Programming
+751,Airbnb,Bit Manipulation
+752,"Facebook,Amazon,Citadel,Bloomberg",Breadth-first Search
+753,Google,"Math,Depth-first Search"
+754,InMobi,Math
+755,Airbnb,Array
+756,Amazon,"Bit Manipulation,Depth-first Search"
+757,Uber,Greedy
+758,Google,String
+759,"DoorDash,Pinterest,Amazon,Intuit,Oracle,Bloomberg,Wayfair","Heap,Greedy"
+760,Google,Hash Table
+761,Citrix,"String,Recursion"
+762,Amazon,Bit Manipulation
+763,"Amazon,Uber,Adobe,Bloomberg","Two Pointers,Greedy"
+764,Facebook,Dynamic Programming
+765,Google,"Greedy,Union Find,Graph"
+766,Facebook,Array
+767,"Amazon,Google,Facebook,Microsoft,Wish,Uber,Goldman Sachs","String,Heap,Greedy,Sort"
+768,"Microsoft,Google",Array
+769,Google,Array
+770,Roblox,"Hash Table,String,Stack"
+771,Apple,Hash Table
+772,"Facebook,Amazon,ByteDance","String,Stack"
+773,"Uber,Airbnb,Facebook",Breadth-first Search
+774,Google,Binary Search
+775,Bloomberg,"Array,Math"
+776,"Google,Salesforce","Tree,Recursion"
+777,Google,Brainteaser
+778,Facebook,"Binary Search,Heap,Depth-first Search,Union Find"
+779,"Amazon,Facebook",Recursion
+780,"Twitter,Goldman Sachs",Math
+781,Wish,"Hash Table,Math"
+782,Google,"Array,Math"
+783,Amazon,"Tree,Depth-first Search,Recursion"
+784,"Bloomberg,Amazon,Spotify","Backtracking,Bit Manipulation"
+785,"Facebook,ByteDance,eBay","Depth-first Search,Breadth-first Search,Graph"
+786,Robinhood,"Binary Search,Heap"
+787,"Facebook,Expedia,Apple,Airbnb,Amazon","Dynamic Programming,Heap,Breadth-first Search"
+788,Google,String
+789,Google,Math
+790,Google,Dynamic Programming
+791,Facebook,String
+792,Google,Array
+793,Adobe,Binary Search
+794,"Amazon,Facebook,Bloomberg","Math,Recursion"
+795,DoorDash,Array
+796,"Amazon,Microsoft,Oracle",
+797,"Bloomberg,Amazon","Backtracking,Depth-first Search,Graph"
+798,,
+799,Samsung,Dynamic Programming
+800,Google,"Math,String"
+801,Oracle,Dynamic Programming
+802,Amazon,"Depth-first Search,Graph"
+803,Google,Union Find
+804,,
+805,Apple,Math
+806,Google,
+807,Google,
+808,Google,Dynamic Programming
+809,Google,String
+810,Garena,Math
+811,"Karat,Wayfair,Indeed,Intuit,Pinterest,Roblox",Hash Table
+812,Google,Math
+813,Amazon,Dynamic Programming
+814,"Amazon,Facebook",Tree
+815,"Amazon,Square,Uber",Breadth-first Search
+816,Google,String
+817,Google,Linked List
+818,Google,"Dynamic Programming,Heap"
+819,Amazon,String
+820,,
+821,Apple,
+822,,
+823,,
+824,Facebook,String
+825,Facebook,Array
+826,Amazon,Two Pointers
+827,"Facebook,Google,Amazon","Depth-first Search,Breadth-first Search"
+828,Microsoft,Two Pointers
+829,"Citadel,Visa,Amazon,Nvidia",Math
+830,Google,Array
+831,Twitter,String
+832,"Facebook,Microsoft",Array
+833,Google,String
+834,Google,"Tree,Depth-first Search"
+835,Google,Array
+836,"Microsoft,Amazon,Google",Math
+837,Google,Dynamic Programming
+838,Google,"Two Pointers,Dynamic Programming"
+839,Facebook,"Depth-first Search,Union Find,Graph"
+840,Google,Array
+841,"Amazon,Twitch","Depth-first Search,Graph"
+842,Amazon,"String,Backtracking,Greedy"
+843,Google,Minimax
+844,"Facebook,Google,Amazon,Oracle","Two Pointers,Stack"
+845,"Amazon,Paypal",Two Pointers
+846,"Apple,Google,eBay",Ordered Map
+847,Google,"Dynamic Programming,Breadth-first Search"
+848,,
+849,"Yandex,Google,Amazon",Array
+850,Sumologic,"Segment Tree,Line Sweep"
+851,Amazon,Depth-first Search
+852,"Bloomberg,Yahoo",Binary Search
+853,"Google,Nutanix",Sort
+854,Amazon,"Breadth-first Search,Graph"
+855,Google,Ordered Map
+856,Google,"String,Stack"
+857,Google,Heap
+858,Facebook,Math
+859,Facebook,String
+860,Atlassian,Greedy
+861,Amazon,Greedy
+862,Goldman Sachs,"Binary Search,Queue"
+863,"Amazon,Facebook,Google","Tree,Depth-first Search,Breadth-first Search"
+864,"ByteDance,Airbnb","Heap,Breadth-first Search"
+865,Facebook,"Tree,Depth-first Search,Breadth-first Search,Recursion"
+866,Amazon,Math
+867,"Apple,Microsoft,Nvidia,Citadel",Array
+868,"Twitter,eBay",Math
+869,,
+870,"Apple,Facebook","Array,Greedy"
+871,"Flipkart,Google","Dynamic Programming,Heap"
+872,Amazon,"Tree,Depth-first Search"
+873,Amazon,"Array,Dynamic Programming"
+874,Jane Street,Greedy
+875,Facebook,Binary Search
+876,Microsoft,Linked List
+877,"Adobe,Apple","Math,Dynamic Programming,Minimax"
+878,,
+879,Google,Dynamic Programming
+880,"Amazon,National Instruments",Stack
+881,"Roblox,Paypal","Two Pointers,Greedy"
+882,Amazon,"Heap,Breadth-first Search"
+883,,
+884,"Amazon,Facebook",Hash Table
+885,Facebook,Math
+886,"Amazon,Google,Apple,Coupang","Depth-first Search,Graph"
+887,Amazon,"Math,Binary Search,Dynamic Programming"
+888,Yahoo,Array
+889,"Amazon,Bloomberg",Tree
+890,Microsoft,String
+891,Sapient,"Array,Math"
+892,,
+893,Facebook,String
+894,"Google,Amazon","Tree,Recursion"
+895,"Amazon,Microsoft,Bloomberg,Adobe","Hash Table,Stack"
+896,Facebook,Array
+897,"Apple,Amazon","Tree,Depth-first Search,Recursion"
+898,Amazon,"Dynamic Programming,Bit Manipulation"
+899,Amazon,"Math,String"
+900,Google,Array
+901,Amazon,Stack
+902,Amazon,"Math,Dynamic Programming"
+903,,
+904,"Google,Akamai",Two Pointers
+905,"Capital One,VMware",Array
+906,Google,Math
+907,"Google,Dunzo,Microsoft,VMware","Array,Stack"
+908,Adobe,Math
+909,Amazon,Breadth-first Search
+910,Adobe,"Math,Greedy"
+911,Google,Binary Search
+912,Apple,
+913,Google,"Breadth-first Search,Minimax"
+914,Google,"Array,Math"
+915,Microsoft,Array
+916,"Amazon,Google",String
+917,Apple,String
+918,"Two Sigma,Amazon,Facebook",Array
+919,"Facebook,Microsoft",Tree
+920,"Salesforce,Facebook",Dynamic Programming
+921,"Facebook,Visa","Stack,Greedy"
+922,Amazon,"Array,Sort"
+923,Quora,Two Pointers
+924,ByteDance,"Depth-first Search,Union Find"
+925,Google,"Two Pointers,String"
+926,Amazon,Array
+927,"Netflix,Hotstar","Math,Binary Search,Greedy"
+928,Dropbox,"Depth-first Search,Union Find,Graph"
+929,Google,String
+930,C3 IoT,"Hash Table,Two Pointers"
+931,Amazon,Dynamic Programming
+932,Google,Divide and Conquer
+933,Yandex,Queue
+934,"Google,Uber,Bloomberg,Snapchat","Depth-first Search,Breadth-first Search"
+935,Qualtrics,Dynamic Programming
+936,Facebook,"String,Greedy"
+937,"Amazon,Audible",String
+938,"Facebook,Google,Oracle","Tree,Depth-first Search,Recursion"
+939,"Facebook,Amazon,Snapchat",Hash Table
+940,,
+941,,
+942,Uber,Math
+943,"Amazon,Google",Dynamic Programming
+944,Google,Greedy
+945,"Twitter,Uber,eBay",Array
+946,"Google,Facebook",Stack
+947,Google,"Depth-first Search,Union Find"
+948,Google,"Two Pointers,Greedy,Sort"
+949,"Google,Microsoft",Math
+950,Amazon,Array
+951,"Google,Microsoft",Tree
+952,Google,"Math,Union Find"
+953,"Facebook,Walmart Labs,Amazon",Hash Table
+954,Google,"Array,Hash Table"
+955,Google,Greedy
+956,,
+957,Amazon,Hash Table
+958,Facebook,Tree
+959,Uber,"Depth-first Search,Union Find,Graph"
+960,Google,Dynamic Programming
+961,"Apple,Akamai",Hash Table
+962,Facebook,Array
+963,Google,"Math,Geometry"
+964,Snapchat,"Math,Dynamic Programming"
+965,Box,Tree
+966,"Facebook,Amazon,Google,Thumbtack","Hash Table,String"
+967,Flipkart,"Backtracking,Depth-first Search,Breadth-first Search,Recursion"
+968,"Google,Microsoft,Bloomberg,Flipkart","Dynamic Programming,Tree,Depth-first Search"
+969,Apple,"Array,Sort"
+970,,
+971,Bloomberg,"Tree,Depth-first Search"
+972,Microsoft,Math
+973,"Facebook,Amazon,DoorDash,LinkedIn,Asana,Apple,Uber,ByteDance","Divide and Conquer,Heap,Sort"
+974,"Twilio,Facebook,ByteDance","Array,Hash Table"
+975,Google,"Dynamic Programming,Stack,Ordered Map"
+976,C3 IoT,"Math,Sort"
+977,"Facebook,Uber,Google,Amazon,Apple,Bloomberg,Yandex,Microsoft,ByteDance,Flipkart,Cisco","Array,Two Pointers"
+978,"Amazon,Bloomberg","Array,Dynamic Programming,Sliding Window"
+979,Amazon,"Tree,Depth-first Search"
+980,"Amazon,JPMorgan","Backtracking,Depth-first Search"
+981,"Oracle,ByteDance,Uber,Apple,Lyft,Sumologic,Google,Atlassian,Microsoft,Twitter,Netflix","Hash Table,Binary Search"
+982,Flipkart,Dynamic Programming
+983,"Facebook,Apple,Grab",Dynamic Programming
+984,"Grab,Zalando",Greedy
+985,Indeed,Array
+986,"Facebook,Uber,Apple,Google,Amazon,Bloomberg",Two Pointers
+987,"Facebook,Bloomberg,Amazon,Microsoft,Apple,ByteDance","Hash Table,Tree,Depth-first Search,Breadth-first Search"
+988,Google,"Tree,Depth-first Search"
+989,Facebook,Array
+990,Sumologic,"Union Find,Graph"
+991,Bloomberg,"Math,Greedy"
+992,"Amazon,Google","Hash Table,Two Pointers,Sliding Window"
+993,"Bloomberg,Amazon,Facebook","Tree,Breadth-first Search"
+994,"Amazon,Google,Microsoft,Bloomberg,Oracle,Walmart Labs",Breadth-first Search
+995,"Google,Amazon","Greedy,Sliding Window"
+996,"Apple,Codenation","Math,Backtracking,Graph"
+997,Amazon,Graph
+998,Facebook,Tree
+999,Square,Array
+1000,Amazon,Dynamic Programming
+1001,Dropbox,Hash Table
+1002,"Apple,Amazon","Array,Hash Table"
+1003,Nutanix,"String,Stack"
+1004,"Facebook,Coupang,HBO","Two Pointers,Sliding Window"
+1005,Amazon,Greedy
+1006,Microsoft,Math
+1007,Google,"Array,Greedy"
+1008,"Amazon,Oracle",Tree
+1009,Cloudera,Math
+1010,"Amazon,Citrix,IBM,Paypal,BlackRock",Array
+1011,"Amazon,Flipkart","Array,Binary Search"
+1012,"Akuna Capital,IBM","Math,Dynamic Programming"
+1013,"Amazon,Adobe",Array
+1014,Wayfair,Array
+1015,Google,Math
+1016,Google,String
+1017,Grab,Math
+1018,,
+1019,"Amazon,Google,Facebook","Linked List,Stack"
+1020,Google,Depth-first Search
+1021,Google,Stack
+1022,Amazon,Tree
+1023,"Amazon,Google","String,Trie"
+1024,Amazon,Dynamic Programming
+1025,"Adobe,Bloomberg,Amazon","Math,Dynamic Programming"
+1026,Facebook,"Tree,Depth-first Search"
+1027,"eBay,C3 IoT,Google,Facebook,Uber",Dynamic Programming
+1028,"Amazon,LinkedIn","Tree,Depth-first Search"
+1029,Bloomberg,Greedy
+1030,Yahoo,Sort
+1031,Amazon,Array
+1032,Facebook,Trie
+1033,Facebook,Brainteaser
+1034,"Amazon,Booking,Booking.com",Depth-first Search
+1035,Amazon,Array
+1036,"Uber,Google,Facebook,UiPath",Breadth-first Search
+1037,Google,Math
+1038,Facebook,"Tree,Depth-first Search,Binary Search Tree,Recursion"
+1039,Uber,Dynamic Programming
+1040,Facebook,"Array,Sliding Window"
+1041,"Amazon,Goldman Sachs,Google,Expedia",Math
+1042,LinkedIn,Graph
+1043,Amazon,Dynamic Programming
+1044,Amazon,"Hash Table,Binary Search,Suffix Array"
+1045,Amazon,
+1046,Amazon,"Heap,Greedy"
+1047,"Facebook,Amazon,Oracle,Bloomberg,Microsoft",Stack
+1048,"Two Sigma,Google","Hash Table,Dynamic Programming"
+1049,"ByteDance,Goldman Sachs",Dynamic Programming
+1050,Amazon,
+1051,Goldman Sachs,Array
+1052,Uber,"Array,Sliding Window"
+1053,Facebook,"Array,Greedy"
+1054,Bloomberg,"Heap,Sort"
+1055,Facebook,"Dynamic Programming,Greedy"
+1056,Google,Math
+1057,"Google,Amazon,ByteDance","Greedy,Sort"
+1058,Microsoft,"Math,Dynamic Programming,Greedy"
+1059,Bloomberg,"Depth-first Search,Graph"
+1060,"Facebook,Bloomberg",Binary Search
+1061,,
+1062,Google,String
+1063,Hulu,Stack
+1064,Uber,"Array,Binary Search"
+1065,Amazon,"String,Trie"
+1066,Google,"Dynamic Programming,Backtracking"
+1067,"eBay,Amazon","Math,Dynamic Programming"
+1068,Amazon,
+1069,Amazon,
+1070,Amazon,
+1071,"Amazon,Atlassian,Visa",String
+1072,,
+1073,Grab,Math
+1074,Google,"Array,Dynamic Programming,Sliding Window"
+1075,Facebook,
+1076,Facebook,
+1077,Facebook,
+1078,Google,Hash Table
+1079,Microsoft,Backtracking
+1080,Amazon,Depth-first Search
+1081,"Amazon,FactSet,Google,ByteDance","String,Stack,Greedy"
+1082,Amazon,
+1083,Amazon,
+1084,Amazon,
+1085,Amazon,Array
+1086,Goldman Sachs,"Array,Hash Table,Sort"
+1087,Google,Backtracking
+1088,Google,"Math,Backtracking"
+1089,Google,Array
+1090,Google,"Hash Table,Greedy"
+1091,"Amazon,Google,Facebook,Oracle,Snapchat",Breadth-first Search
+1092,"Microsoft,Amazon",Dynamic Programming
+1093,Microsoft,"Math,Two Pointers"
+1094,Facebook,Greedy
+1095,"Apple,Bloomberg,Quora",Binary Search
+1096,"Google,Adobe",String
+1097,GSN Games,
+1098,,
+1099,Amazon,"Array,Two Pointers,Sort"
+1100,Amazon,"String,Sliding Window"
+1101,Google,Union Find
+1102,"Google,Facebook","Depth-first Search,Union Find,Graph"
+1103,,
+1104,"Amazon,Microsoft,Bloomberg","Math,Tree"
+1105,Amazon,Dynamic Programming
+1106,Amazon,String
+1107,Amazon,
+1108,Adobe,String
+1109,Goldman Sachs,"Array,Math"
+1110,"Google,Amazon,Facebook,Salesforce","Tree,Depth-first Search"
+1111,"Facebook,Bloomreach","Binary Search,Greedy"
+1112,Coursera,
+1113,Facebook,
+1114,Microsoft,
+1115,,
+1116,Microsoft,
+1117,"LinkedIn,Amazon",
+1118,Amazon,
+1119,Amazon,String
+1120,"Amazon,Facebook",Tree
+1121,Google,Math
+1122,"Amazon,Apple","Array,Sort"
+1123,Facebook,"Tree,Depth-first Search"
+1124,Adobe,Stack
+1125,Google,"Dynamic Programming,Bit Manipulation"
+1126,Yelp,
+1127,LinkedIn,
+1128,Amazon,Array
+1129,Amazon,"Breadth-first Search,Graph"
+1130,"Amazon,Bloomberg","Dynamic Programming,Stack,Tree"
+1131,Google,"Math,Bit Manipulation"
+1132,Facebook,
+1133,Amazon,"Array,Hash Table"
+1134,Amazon,Math
+1135,"Amazon,Uber","Union Find,Graph"
+1136,"Google,Uber","Dynamic Programming,Depth-first Search,Graph"
+1137,Facebook,Recursion
+1138,"Google,Amazon","Hash Table,String"
+1139,Amazon,Dynamic Programming
+1140,Google,Dynamic Programming
+1141,Zoom,
+1142,"Facebook,Zoom",
+1143,"Amazon,Microsoft,eBay",Dynamic Programming
+1144,Google,Array
+1145,"Google,Bloomberg","Tree,Depth-first Search"
+1146,"Google,Rubrik",Array
+1147,Google,"Dynamic Programming,Rolling Hash"
+1148,LinkedIn,
+1149,LinkedIn,
+1150,Facebook,"Array,Binary Search"
+1151,"IBM,Twitter","Array,Sliding Window"
+1152,"Amazon,Spotify,DoorDash","Array,Hash Table,Sort"
+1153,"Google,ByteDance",Graph
+1154,ZScaler,Math
+1155,"Amazon,Microsoft,ByteDance",Dynamic Programming
+1156,Amazon,String
+1157,"Google,Nutanix","Array,Binary Search,Segment Tree"
+1158,Poshmark,
+1159,Poshmark,
+1160,Amazon,"Array,Hash Table"
+1161,"Amazon,Facebook","Tree,Breadth-first Search"
+1162,"Facebook,Google","Breadth-first Search,Graph"
+1163,"Goldman Sachs,Salesforce","String,Suffix Array"
+1164,Amazon,
+1165,Google,String
+1166,Amazon,"Hash Table,Design"
+1167,Amazon,Greedy
+1168,"Google,Facebook,Yahoo","Union Find,Graph"
+1169,Bloomberg,"Array,String"
+1170,Google,"Array,String,Binary Search"
+1171,Amazon,Linked List
+1172,ByteDance,Design
+1173,DoorDash,
+1174,DoorDash,
+1175,"Infosys,Amazon",Math
+1176,Amazon,"Array,Sliding Window"
+1177,SAP,"Array,String"
+1178,Dropbox,"Hash Table,Bit Manipulation"
+1179,Amazon,
+1180,Virtu Financial,"Math,String"
+1181,Clutter,String
+1182,Google,Binary Search
+1183,Qualcomm,"Math,Sort"
+1184,Google,Array
+1185,"Microsoft,United Health Group",Array
+1186,Goldman Sachs,Dynamic Programming
+1187,,
+1188,"LinkedIn,Bloomberg,eBay,Apple,Microsoft,Rubrik",
+1189,"Tesla,Microsoft","Hash Table,String"
+1190,"Amazon,Oracle,Postmates",Stack
+1191,American Express,Dynamic Programming
+1192,"Amazon,Adobe",Depth-first Search
+1193,"Wayfair,Wish",
+1194,Wayfair,
+1195,Microsoft,
+1196,Virtu Financial,Greedy
+1197,"Expedia,DoorDash,Facebook,Amazon,Microsoft,Mathworks,Google,Indeed,ByteDance,Cisco,Twitter",Breadth-first Search
+1198,Qualtrics,"Hash Table,Binary Search"
+1199,Google,"Math,Dynamic Programming"
+1200,"Microsoft,Uber",Array
+1201,American Express,"Math,Binary Search"
+1202,Citrix,"Array,Union Find"
+1203,Google,"Depth-first Search,Graph,Topological Sort"
+1204,Wayfair,
+1205,Wish,
+1206,Microsoft,Design
+1207,Apple,Hash Table
+1208,Traveloka,"Array,Sliding Window"
+1209,"Bloomberg,Facebook,Amazon,Roblox,Google,Microsoft",Stack
+1210,Kakao,Breadth-first Search
+1211,Facebook,
+1212,"Oracle,Wayfair",
+1213,Facebook,"Hash Table,Two Pointers"
+1214,Amazon,Binary Search Tree
+1215,"Amazon,Epic Systems",Backtracking
+1216,Facebook,"String,Dynamic Programming"
+1217,Morgan Stanley,"Array,Math,Greedy"
+1218,Google,"Hash Table,Math,Dynamic Programming"
+1219,Google,Backtracking
+1220,Swiggy,Dynamic Programming
+1221,Walmart Labs,"String,Greedy"
+1222,Media.net,Array
+1223,Codenation,Dynamic Programming
+1224,American Express,Hash Table
+1225,"Amazon,Facebook",
+1226,Apple,
+1227,"Uber,Microstrategy","Math,Dynamic Programming,Brainteaser"
+1228,Audible,Math
+1229,"Amazon,DoorDash","Two Pointers,Sort,Line Sweep"
+1230,Twitch,"Math,Dynamic Programming"
+1231,Google,"Binary Search,Greedy"
+1232,Palantir Technologies,"Array,Math,Geometry"
+1233,Facebook,"Array,String"
+1234,Accolite,"Two Pointers,String"
+1235,"LinkedIn,DoorDash,ByteDance,Amazon,Cisco,Databricks,Bloomberg,Dunzo,Swiggy","Binary Search,Dynamic Programming,Sort"
+1236,Amazon,"Depth-first Search,Breadth-first Search"
+1237,Google,"Math,Binary Search"
+1238,"Walmart,Walmart Labs",Math
+1239,"Tesla,Microsoft,Oracle,DiDi","Backtracking,Bit Manipulation"
+1240,Google,"Dynamic Programming,Backtracking"
+1241,Facebook,
+1242,"Databricks,Dropbox","Depth-first Search,Breadth-first Search"
+1243,Virtu Financial,Array
+1244,"Bloomberg,Google","Hash Table,Sort,Design"
+1245,Google,"Tree,Depth-first Search,Breadth-first Search"
+1246,Microsoft,Dynamic Programming
+1247,Bloomberg,"String,Greedy"
+1248,Citadel,Two Pointers
+1249,"Facebook,ByteDance,Bloomberg,Amazon,Goldman Sachs,LinkedIn,Apple","String,Stack"
+1250,Dropbox,Math
+1251,Amazon,
+1252,,
+1253,Grab,"Math,Greedy"
+1254,"Google,Amazon,Oracle,Uber",Depth-first Search
+1255,Google,Bit Manipulation
+1256,Quora,"Math,Bit Manipulation"
+1257,Airbnb,Tree
+1258,Amazon,Backtracking
+1259,Amazon,"Math,Dynamic Programming"
+1260,Amazon,Array
+1261,Google,"Hash Table,Tree"
+1262,Facebook,Dynamic Programming
+1263,,
+1264,Facebook,
+1265,"Google,Facebook",
+1266,"Bloomberg,Amazon,Facebook","Array,Geometry"
+1267,"Google,Amazon","Array,Graph"
+1268,"Amazon,Bloomberg",String
+1269,Facebook,Dynamic Programming
+1270,Amazon,
+1271,Virtu Financial,"Math,String"
+1272,Google,"Math,Line Sweep"
+1273,Microsoft,"Dynamic Programming,Depth-first Search"
+1274,Bloomberg,Divide and Conquer
+1275,Facebook,Array
+1276,Delivery Hero,"Math,Greedy"
+1277,"Google,Amazon","Array,Dynamic Programming"
+1278,"Uber,Apple",Dynamic Programming
+1279,Amazon,
+1280,Roblox,
+1281,"Quora,Uber",Math
+1282,Roblox,Greedy
+1283,"Salesforce,Google",Binary Search
+1284,"Google,Airbnb",Breadth-first Search
+1285,"Amazon,Microsoft",
+1286,"Amazon,Google","Backtracking,Design"
+1287,Facebook,Array
+1288,Amazon,"Greedy,Sort,Line Sweep"
+1289,Roblox,Dynamic Programming
+1290,"JPMorgan,Bloomberg,Citrix,Microsoft","Linked List,Bit Manipulation"
+1291,Amazon,Backtracking
+1292,"Google,Roblox","Array,Binary Search"
+1293,"Google,ByteDance,Amazon",Breadth-first Search
+1294,Point72,
+1295,eBay,Array
+1296,"Goldman Sachs,ByteDance","Array,Greedy"
+1297,"Twitter,Facebook","String,Bit Manipulation"
+1298,Airbnb,Breadth-first Search
+1299,"Amazon,Adobe",Array
+1300,Bloomberg,"Array,Binary Search"
+1301,Samsung,Dynamic Programming
+1302,Google,"Tree,Depth-first Search"
+1303,Amazon,
+1304,"Microsoft,Tesla",Array
+1305,"Facebook,Amazon","Sort,Tree"
+1306,Microsoft,"Depth-first Search,Breadth-first Search,Recursion"
+1307,Atlassian,"Math,Backtracking"
+1308,,
+1309,Amazon,String
+1310,"Codenation,Amazon",Bit Manipulation
+1311,Amazon,"Hash Table,String,Breadth-first Search"
+1312,"Amazon,LinkedIn",Dynamic Programming
+1313,"Amazon,Google,Apple",Array
+1314,Google,Dynamic Programming
+1315,"Amazon,Bloomberg","Tree,Depth-first Search"
+1316,Google,"String,Rolling Hash"
+1317,HRT,Math
+1318,Microsoft,Bit Manipulation
+1319,"Amazon,Apple","Depth-first Search,Breadth-first Search,Union Find"
+1320,Google,Dynamic Programming
+1321,Amazon,
+1322,Facebook,
+1323,HRT,Math
+1324,Postmates,String
+1325,Amazon,Tree
+1326,"Apple,Docusign,Twitter,Morgan Stanley","Dynamic Programming,Greedy"
+1327,Amazon,
+1328,Amazon,String
+1329,Facebook,"Array,Sort"
+1330,Codenation,"Array,Math"
+1331,"Amazon,Facebook",Array
+1332,Amazon,String
+1333,"Yelp,Amazon","Array,Sort"
+1334,Citrix,Graph
+1335,"Amazon,Swiggy",Dynamic Programming
+1336,"Square,Machine Zone,MachineZone",
+1337,Amazon,"Array,Binary Search"
+1338,Akuna Capital,"Array,Greedy"
+1339,Amazon,"Dynamic Programming,Tree,Depth-first Search"
+1340,Microsoft,Dynamic Programming
+1341,SAP,
+1342,"Amazon,Microsoft",Bit Manipulation
+1343,LinkedIn,Array
+1344,"Microsoft,Amazon",Math
+1345,"Amazon,Google",Breadth-first Search
+1346,Google,Array
+1347,"Bloomberg,Microsoft",String
+1348,Twitter,Design
+1349,SAP,Dynamic Programming
+1350,Amazon,
+1351,"Amazon,Microsoft,Apple","Array,Binary Search"
+1352,"ByteDance,Google,Uber","Array,Design"
+1353,Infosys,"Greedy,Sort,Segment Tree"
+1354,Quora,Greedy
+1355,IBM,
+1356,Adobe,"Sort,Bit Manipulation"
+1357,Facebook,Design
+1358,"DE Shaw,Microsoft",String
+1359,DoorDash,"Math,Dynamic Programming"
+1360,Amazon,
+1361,Facebook,Graph
+1362,Amazon,Math
+1363,Amazon,"Math,Dynamic Programming"
+1364,Roblox,
+1365,"Amazon,Bloomberg","Array,Hash Table"
+1366,"Atlassian,Zoom","Array,Sort"
+1367,Amazon,"Linked List,Dynamic Programming,Tree"
+1368,Google,Breadth-first Search
+1369,Microsoft,
+1370,Akuna Capital,"String,Sort"
+1371,Microsoft,String
+1372,Sumerge,"Dynamic Programming,Tree"
+1373,Amazon,"Dynamic Programming,Binary Search Tree"
+1374,Microsoft,String
+1375,Amazon,Array
+1376,Google,Depth-first Search
+1377,Google,Depth-first Search
+1378,Point72,
+1379,Facebook,"Tree,Depth-first Search,Breadth-first Search,Recursion"
+1380,Oracle,Array
+1381,Amazon,"Stack,Design"
+1382,"Facebook,Adobe",Binary Search Tree
+1383,"DoorDash,Amazon","Greedy,Sort"
+1384,,
+1385,Uber,
+1386,Amazon,"Array,Greedy"
+1387,Google,"Sort,Graph"
+1388,Google,Dynamic Programming
+1389,Visa,Array
+1390,Capital One,Math
+1391,Robinhood,"Depth-first Search,Breadth-first Search"
+1392,Google,String
+1393,Robinhood,
+1394,Microsoft,Array
+1395,"Goldman Sachs,Amazon,Citadel",Array
+1396,Bloomberg,Design
+1397,Dunzo,Dynamic Programming
+1398,Amazon,
+1399,Mercari,Array
+1400,Uber,Greedy
+1401,Google,Geometry
+1402,OT,Dynamic Programming
+1403,Mercari,"Greedy,Sort"
+1404,TripAdvisor,"String,Bit Manipulation"
+1405,"Grab,Amazon,Adobe","Dynamic Programming,Greedy"
+1406,Google,Dynamic Programming
+1407,Point72,
+1408,Amazon,String
+1409,Amazon,Array
+1410,Oracle,"String,Stack"
+1411,"Akuna Capital,Facebook,Paypal",Dynamic Programming
+1412,,
+1413,Swiggy,Array
+1414,Google,"Array,Greedy"
+1415,Microsoft,Backtracking
+1416,ByteDance,Dynamic Programming
+1417,Google,String
+1418,"JP Morgan,JPMorgan",Hash Table
+1419,C3.ai,String
+1420,Dunzo,Dynamic Programming
+1421,Amazon,
+1422,Google,String
+1423,Google,"Array,Dynamic Programming,Sliding Window"
+1424,eBay,"Array,Sort"
+1425,Akuna Capital,Dynamic Programming
+1426,DRW,Array
+1427,Goldman Sachs,"Array,Math"
+1428,Facebook,Array
+1429,"Amazon,Bloomberg,Microsoft","Hash Table,Design"
+1430,Amazon,Tree
+1431,Adobe,Array
+1432,Mercari,String
+1433,endurance,"String,Greedy"
+1434,MindTickle,"Dynamic Programming,Bit Manipulation"
+1435,Twitch,
+1436,Yelp,String
+1437,United Health Group,Array
+1438,Google,"Array,Sliding Window"
+1439,Facebook,Heap
+1440,Point72,
+1441,Google,Stack
+1442,,
+1443,Facebook,"Tree,Depth-first Search"
+1444,Google,Dynamic Programming
+1445,Facebook,
+1446,Microsoft,String
+1447,Google,Math
+1448,"Microsoft,Amazon","Tree,Depth-first Search"
+1449,Google,"String,Dynamic Programming"
+1450,,
+1451,"Amazon,VMware","String,Sort"
+1452,Google,"String,Sort"
+1453,Facebook,Geometry
+1454,Amazon,
+1455,Yelp,String
+1456,Amazon,"String,Sliding Window"
+1457,Amazon,"Bit Manipulation,Tree,Depth-first Search"
+1458,Microsoft,Dynamic Programming
+1459,Twitter,
+1460,Facebook,Array
+1461,Google,"String,Bit Manipulation"
+1462,Amazon,Graph
+1463,Google,Dynamic Programming
+1464,Samsung,Array
+1465,"Amazon,Expedia,Roblox",Array
+1466,Microsoft,"Tree,Depth-first Search"
+1467,,
+1468,Startup,
+1469,Microsoft,"Tree,Depth-first Search"
+1470,"Apple,Bloomberg",Array
+1471,Google,"Array,Sort"
+1472,"Bloomberg,DoorDash,Roblox",Design
+1473,Paypal,Dynamic Programming
+1474,Microsoft,Linked List
+1475,Dream11,Array
+1476,Nuro,Array
+1477,"Google,ByteDance",Dynamic Programming
+1478,Bloomberg,"Math,Dynamic Programming"
+1479,Amazon,
+1480,"Apple,Amazon,Adobe,Bloomberg",Array
+1481,"Amazon,Roblox,Oracle,Expedia","Array,Sort"
+1482,Google,"Array,Binary Search"
+1483,Google,Dynamic Programming
+1484,Startup,
+1485,Bloomberg,"Hash Table,Tree,Depth-first Search,Breadth-first Search"
+1486,Walmart Labs,"Array,Bit Manipulation"
+1487,Microsoft,"Hash Table,String"
+1488,Google,"Array,Hash Table"
+1489,Amazon,"Depth-first Search,Union Find"
+1490,Amazon,"Hash Table,Tree,Depth-first Search,Breadth-first Search"
+1491,Amazon,"Array,Sort"
+1492,"Expedia,Twitter",Math
+1493,Yandex,Array
+1494,Microsoft,Graph
+1495,Amazon,
+1496,Amazon,String
+1497,Paypal,"Array,Math,Greedy"
+1498,Facebook,"Sort,Sliding Window"
+1499,Google,"Array,Sliding Window"
+1500,Twitch,"Array,Design"
+1501,,
+1502,Amazon,"Array,Sort"
+1503,Google,"Array,Brainteaser"
+1504,Google,Dynamic Programming
+1505,Amazon,Greedy
+1506,Google,
+1507,Expedia,String
+1508,Google,"Array,Sort"
+1509,Google,"Array,Sort"
+1510,Microsoft,Dynamic Programming
+1511,Amazon,
+1512,"Microsoft,Bloomberg,Amazon,Adobe,Apple","Array,Hash Table,Math"
+1513,Google,"Math,String"
+1514,Google,Graph
+1515,"Reddit,Uber",Geometry
+1516,Google,Tree
+1517,Apple,
+1518,IBM,Greedy
+1519,"Samsung,Uber","Depth-first Search,Breadth-first Search"
+1520,Amazon,Greedy
+1521,American Express,"Binary Search,Bit Manipulation,Segment Tree"
+1522,"Facebook,Microsoft",
+1523,Microsoft,Math
+1524,Directi,"Array,Math"
+1525,Google,"String,Bit Manipulation"
+1526,Google,Segment Tree
+1527,,
+1528,Facebook,Sort
+1529,Citrix,String
+1530,Google,"Tree,Depth-first Search"
+1531,Toptal,"String,Dynamic Programming"
+1532,,
+1533,Amazon,Binary Search
+1534,Turvo,Array
+1535,Directi,Array
+1536,Ajira,Greedy
+1537,MindTickle,Dynamic Programming
+1538,Google,
+1539,"Facebook,Amazon,Microsoft,Apple","Array,Hash Table"
+1540,Infosys,"String,Greedy"
+1541,Facebook,"String,Stack"
+1542,Directi,"String,Bit Manipulation"
+1543,,
+1544,Google,"String,Stack"
+1545,Rupeek,String
+1546,Google,Dynamic Programming
+1547,Google,Dynamic Programming
+1548,Google,"Dynamic Programming,Graph"
+1549,,
+1550,DJI,Array
+1551,Brillio,Math
+1552,Roblox,"Array,Binary Search"
+1553,Google,Dynamic Programming
+1554,Airbnb,
+1555,Optum,
+1556,,
+1557,"Google,Airbnb",Graph
+1558,Amazon,Greedy
+1559,Amazon,Depth-first Search
+1560,Expedia,Array
+1561,,
+1562,Google,Binary Search
+1563,,
+1564,Google,Greedy
+1565,Whole Foods Market,
+1566,HRT,Array
+1567,Arcesium,Greedy
+1568,Unacademy,Greedy
+1569,Google,Dynamic Programming
+1570,"Facebook,Apple","Array,Hash Table,Two Pointers"
+1571,Amazon,
+1572,Adobe,Array
+1573,Microsoft,String
+1574,"Amazon,Flipkart","Array,Binary Search"
+1575,TSYS,Dynamic Programming
+1576,"Microsoft,Google",String
+1577,,
+1578,"Microsoft,Tesla",Greedy
+1579,Uber,Union Find
+1580,Google,Greedy
+1581,NerdWallet,
+1582,Google,Array
+1583,Bloomberg,Array
+1584,Directi,Union Find
+1585,Google,"String,Greedy"
+1586,Facebook,"Tree,Design"
+1587,,
+1588,Bloomberg,Array
+1589,Paypal,Greedy
+1590,Amazon,"Array,Hash Table,Math,Binary Search"
+1591,Google,Greedy
+1592,Google,String
+1593,Google,Backtracking
+1594,Google,"Dynamic Programming,Greedy"
+1595,Google,"Dynamic Programming,Graph"
+1596,Amazon,
+1597,Amazon,"String,Tree"
+1598,Mercari,Stack
+1599,peak6,Greedy
+1600,Amazon,"Tree,Design"
+1601,Amazon,Dynamic Programming
+1602,Google,"Tree,Breadth-first Search"
+1603,Amazon,Design
+1604,Wayfair,"String,Ordered Map"
+1605,Google,Greedy
+1606,Wish,Ordered Map
+1607,,
+1608,Google,Array
+1609,JPMorgan,Tree
+1610,"Google,Amazon","Two Pointers,Geometry"
+1611,Expedia,"Dynamic Programming,Bit Manipulation"
+1612,Google,"Hash Table,Tree"
+1613,Amazon,
+1614,"Bloomberg,Facebook",String
+1615,"Microsoft,Amazon",Graph
+1616,Google,"Two Pointers,String,Greedy"
+1617,Codenation,Backtracking
+1618,Google,"String,Binary Search"
+1619,Google,Array
+1620,peak6,Greedy
+1621,Amazon,Dynamic Programming
+1622,Google,"Math,Design"
+1623,Amazon,
+1624,,
+1625,"JP Morgan,JPMorgan","Depth-first Search,Breadth-first Search"
+1626,Uber,Dynamic Programming
+1627,Trexquant,"Math,Union Find"
+1628,Amazon,"Tree,Design,OOP"
+1629,Amazon,Array
+1630,Google,Sort
+1631,"Google,Houzz,ByteDance","Binary Search,Depth-first Search,Union Find,Graph"
+1632,Google,"Greedy,Union Find"
+1633,,
+1634,Amazon,Linked List
+1635,Uber,
+1636,"Twilio,Amazon,eBay","Array,Sort"
+1637,Microsoft,Sort
+1638,Microsoft,"Hash Table,String,Trie,Rolling Hash"
+1639,Dunzo,Dynamic Programming
+1640,Uber,"Array,Hash Table,Sort"
+1641,Amazon,"Math,Dynamic Programming,Backtracking"
+1642,Google,"Binary Search,Heap"
+1643,HeavyWater,Dynamic Programming
+1644,"Microsoft,Facebook",Tree
+1645,Uber,
+1646,,
+1647,"Microsoft,Amazon,Apple","Greedy,Sort"
+1648,Amazon,"Math,Greedy,Sort"
+1649,Akuna Capital,"Binary Search,Binary Indexed Tree,Segment Tree,Ordered Map"
+1650,"Facebook,Microsoft,LinkedIn,Amazon",Tree
+1651,Uber,
+1652,,
+1653,Microsoft,"String,Greedy"
+1654,,
+1655,Google,"Dynamic Programming,Backtracking"
+1656,Bloomberg,"Array,Design"
+1657,Postmates,Greedy
+1658,Google,"Two Pointers,Binary Search,Greedy,Sliding Window"
+1659,Salesforce,"Dynamic Programming,Backtracking"
+1660,Google,Tree
+1661,Facebook,
+1662,Facebook,String
+1663,Lendingkart,Greedy
+1664,Microsoft,"Dynamic Programming,Greedy"
+1665,Akuna Capital,Greedy
+1666,Google,"Tree,Depth-first Search"
+1667,,
+1668,Uber,String
+1669,VMware,Linked List
+1670,Amazon,"Linked List,Design,Dequeue"
+1671,Microsoft,Dynamic Programming
+1672,Adobe,Array
+1673,Amazon,"Stack,Heap,Greedy,Queue"
+1674,CureFit,Greedy
+1675,Samsung,"Heap,Ordered Map"
+1676,Amazon,"Tree,Depth-first Search"
+1677,,
+1678,,
+1679,DE Shaw,Hash Table
+1680,Amazon,Math
+1681,Microsoft,"Backtracking,Greedy"
+1682,Codenation,"String,Dynamic Programming"
+1683,Twitter,
+1684,Robinhood,String
+1685,,
+1686,APT Portfolio,Greedy
+1687,Nutanix,"Two Pointers,Dynamic Programming,Segment Tree,Dequeue"
+1688,,
+1689,Nutanix,Greedy
+1690,Dunzo,Dynamic Programming
+1691,Samsung,"Dynamic Programming,Sort"
+1692,Google,Dynamic Programming
+1693,,
+1694,Activision,String
+1695,Cashfree,Two Pointers
+1696,Uber,Dequeue
+1697,Google,"Sort,Union Find"
+1698,"Intuit,Dunzo","String,Trie,Rolling Hash,Suffix Array"
+1699,Amazon,
+1700,Microsoft,Array
+1701,Salesforce,Array
+1702,"Huwaei,Huawei",Greedy
+1703,Microsoft,Stack
+1704,,
+1705,Uber,"Heap,Greedy"
+1706,Google,Dynamic Programming
+1707,Google,"Bit Manipulation,Trie"
+1708,Google,"Array,Greedy"
+1709,,
+1710,"Amazon,Roblox","Greedy,Sort"
+1711,Adobe,"Array,Hash Table,Two Pointers"
+1712,Robinhood,"Two Pointers,Binary Search"
+1713,Google,Greedy
+1714,"MakeMyTrip,Sprinklr",
+1715,,
+1716,edabit,"Math,Greedy"
+1717,Google,Greedy
+1718,Salesforce,"Backtracking,Recursion"
+1719,Uber,"Tree,Graph"
+1720,,
+1721,Amazon,Linked List
+1722,Google,"Greedy,Depth-first Search,Union Find"
+1723,Amazon,"Backtracking,Recursion"
+1724,Google,"Dynamic Programming,Union Find,Graph"
+1725,AllinCall,Greedy
+1726,Google,"Array,Hash Table"
+1727,"Google,Directi","Greedy,Sort"
+1728,Google,Dynamic Programming
+1729,Tesla,
+1730,Bloomberg,"Depth-first Search,Breadth-first Search,Graph"
+1731,CoderByte,
+1732,,
+1733,Duolingo,"Array,Greedy"
+1734,Amazon,Bit Manipulation
+1735,Amazon,Math
+1736,Google,"String,Greedy"
+1737,Google,"String,Greedy"
+1738,Google,Array
+1739,Codenation,"Math,Binary Search"
+1740,Amazon,"Tree,Depth-first Search,Breadth-first Search"
+1741,Amazon,
+1742,"AppDynamics,Lucid",Array
+1743,Robinhood,Greedy
+1744,Fleetx,Math
+1745,tcs,"String,Dynamic Programming"
+1746,Sprinklr,Dynamic Programming
+1747,Audible,
+1748,Facebook,"Array,Hash Table"
+1749,,
+1750,"Goldman Sachs,Amazon",Two Pointers
+1751,Amazon,"Binary Search,Dynamic Programming"
+1752,SoundHound,Array
+1753,Google,"Math,Heap"
+1754,Snapchat,"Greedy,Suffix Array"
+1755,Sprinklr,"Divide and Conquer,Meet in the Middle"
+1756,Google,"Array,Design,Dequeue"
+1757,Facebook,
+1758,Tesla,"Array,Greedy"
+1759,Virtu Financial,"String,Greedy"
+1760,Flipkart,"Binary Search,Heap"
+1761,Amazon,Graph
+1762,Facebook,Greedy
+1763,Microsoft,String
+1764,Amazon,"Array,Greedy"
+1765,Google,"Breadth-first Search,Graph"
+1766,Google,"Math,Tree,Depth-first Search,Breadth-first Search"
+1767,Google,
+1768,Uber,String
+1769,Google,"Array,Greedy"
+1770,Amazon,Dynamic Programming
+1771,Goldman Sachs,Dynamic Programming
+1772,Amazon,"Hash Table,Sort"
+1773,Facebook,"Array,String"
+1774,Google,Greedy
+1775,HRT,Greedy
+1776,Google,Math
+1777,Amazon,
+1778,Google,"Depth-first Search,Breadth-first Search,Graph"
+1779,Amazon,Array
+1780,Microsoft,"Math,Backtracking,Recursion"
+1781,Google,"Hash Table,String"
+1782,Google,Graph
+1783,Amazon,
+1784,Cisco,Greedy
+1785,Twitter,Greedy
+1786,Google,"Dynamic Programming,Graph"
+1787,"Media.net,codeagon",Dynamic Programming
+1788,Amazon,Greedy
+1789,,
+1790,Facebook,String
+1791,Microsoft,Graph
+1792,Amazon,Heap
+1793,Google,Greedy
+1794,Google,"String,Greedy"
+1795,Amazon,
+1796,Softwire,String
+1797,Twitter,"Hash Table,Design"
+1798,Infosys,Greedy
+1799,Amazon,"Dynamic Programming,Backtracking,Recursion"
+1800,tcs,Two Pointers
+1801,Robinhood,"Heap,Greedy"
+1802,Microsoft,"Binary Search,Greedy"
+1803,Vimeo,Trie
+1804,,
+1805,,
+1806,Google,"Array,Greedy"
+1807,Google,"Hash Table,String"
+1808,Microsoft,Math
+1809,Amazon,
+1810,"Google,Facebook","Heap,Depth-first Search,Graph"
+1811,Amazon,
+1812,JPMorgan,String
+1813,Google,String
+1814,Square,"Array,Hash Table"
+1815,Google,Dynamic Programming
+1816,Bloomberg,String
+1817,Twitter,Hash Table
+1818,Uber,"Binary Search,Greedy"
+1819,Akuna Capital,Math
+1820,Bloomberg,Graph
+1821,Google,
+1822,Microsoft,Math
+1823,Bloomberg,Array
+1824,Pony.ai,"Dynamic Programming,Breadth-first Search"
+1825,Google,"Heap,Design,Queue"
