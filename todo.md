@@ -4,6 +4,9 @@
 ## web app
 
 - [ ] Add new problems
+  - Leetcode (>1825)
+  - [ ] Grokking
+  - [ ] EPI
 
 - [ ] Add progress page
     - [ ] add menu for problems
