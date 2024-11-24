@@ -1,117 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <script
-      crossorigin="anonymous"
-      integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
-      src="https://unpkg.com/htmx.org@2.0.3"
-      ></script>
+            crossorigin="anonymous"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            src="https://unpkg.com/htmx.org@2.0.3"
+    ></script>
     <link
-      crossorigin="anonymous"
-      href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
-      integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls"
-      rel="stylesheet"
-      />
+            crossorigin="anonymous"
+            href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+            integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls"
+            rel="stylesheet"
+    />
     <!-- import styles.css from static-->
     <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='css/styles.css') }}"
-      />
+            href="{{ url_for('static', filename='css/styles.css') }}"
+            rel="stylesheet"
+    />
     <title>ff</title>
-  </head>
-  <body>
-    <div class="base-page">
-      <div class="pure-menu pure-menu-horizontal" style="display: inline-block">
+</head>
+<body>
+<div class="base-page">
+    <div class="pure-menu pure-menu-horizontal" style="display: inline-block">
         <!-- Left side menus -->
         <ul class="pure-menu-list" style="float: left">
-          <li class="pure-menu-item pure-menu-selected">
-            <a class="pure-menu-link" href="/">Home</a>
-          </li>
-          <li
-            class="pure-menu-item pure-menu-has-children pure-menu-allow-hover"
+            <li class="pure-menu-item pure-menu-selected">
+                <a class="pure-menu-link" href="/">Home</a>
+            </li>
+            <li
+                    class="pure-menu-item pure-menu-has-children pure-menu-allow-hover"
             >
-            <a class="pure-menu-link" href="/problems" id="menuLink1"
-              >Leetcode</a
-              >
-            <ul class="pure-menu-children">
-              <li class="pure-menu-item">
-                <a class="pure-menu-link" href="/problems">All</a>
-              </li>
-              <li class="pure-menu-item">
-                <a class="pure-menu-link" href="/problems/neetcode150"
-                  >Neetcode 150</a
-                  >
-              </li>
-              <li class="pure-menu-item">
-                <a class="pure-menu-link" href="/problems/blind75">Blind 75</a>
-              </li>
-              <li class="pure-menu-item">
-                <a class="pure-menu-link" href="#">Grokking</a>
-              </li>
-              <li class="pure-menu-item">
-                <a class="pure-menu-link" href="#">EPI</a>
-              </li>
-            </ul>
-          </li>
-          <li
-            class="pure-menu-item pure-menu-has-children pure-menu-allow-hover"
+                <a class="pure-menu-link" href="/problems" id="menuLink1"
+                >Leetcode</a
+                >
+                <ul class="pure-menu-children">
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="/problems">All</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="/problems/neetcode150"
+                        >Neetcode 150</a
+                        >
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="/problems/blind75">Blind 75</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="#">Grokking</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="#">EPI</a>
+                    </li>
+                </ul>
+            </li>
+            <li
+                    class="pure-menu-item pure-menu-has-children pure-menu-allow-hover"
             >
-            <a class="pure-menu-link" href="#" id="menuLink2"
-              >Job Applications</a
-              >
-            <ul class="pure-menu-children">
-              <li class="pure-menu-item">
-                <a class="pure-menu-link" href="#">Active Applications</a>
-              </li>
-              <li class="pure-menu-item">
-                <a class="pure-menu-link" href="#">Application History</a>
-              </li>
-              <li class="pure-menu-item">
-                <a class="pure-menu-link" href="#">Job Board</a>
-              </li>
-            </ul>
-          </li>
+                <a class="pure-menu-link" href="#" id="menuLink2"
+                >Job Applications</a
+                >
+                <ul class="pure-menu-children">
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="#">Active Applications</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="#">Application History</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="#">Job Board</a>
+                    </li>
+                </ul>
+            </li>
         </ul>
         <!-- Right side menus -->
         <ul class="pure-menu-list" style="float: right">
-          <li
-            class="pure-menu-item pure-menu-has-children pure-menu-allow-hover"
+            <li
+                    class="pure-menu-item pure-menu-has-children pure-menu-allow-hover"
             >
-            {% if g.user %}
-            <a class="pure-menu-link" href="#">{{ g.user['username'] }}</a>
-            <ul class="pure-menu-children">
-              <li class="pure-menu-item">
-                <a class="pure-menu-link" href="{{ url_for('auth.logout') }}"
-                  >Log Out</a
-                  >
-              </li>
-            </ul>
-            {% else %}
-            <a class="pure-menu-link" href="#">Account</a>
-            <ul class="pure-menu-children">
-              <li class="pure-menu-item">
-                <a class="pure-menu-link" href="{{ url_for('auth.register') }}"
-                  >Register</a
-                  >
-              </li>
-              <li class="pure-menu-item">
-                <a class="pure-menu-link" href="{{ url_for('auth.login') }}"
-                  >Log In</a
-                  >
-              </li>
-            </ul>
-            {% endif %}
-          </li>
-          <li class="pure-menu-item pure-menu-selected">
-            <a class="pure-menu-link" href="/settings">Settings</a>
-          </li>
+                {% if g.user %}
+                <a class="pure-menu-link" href="#">{{ g.user['username'] }}</a>
+                <ul class="pure-menu-children">
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="{{ url_for('auth.logout') }}"
+                        >Log Out</a
+                        >
+                    </li>
+                </ul>
+                {% else %}
+                <a class="pure-menu-link" href="#">Account</a>
+                <ul class="pure-menu-children">
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="{{ url_for('auth.register') }}"
+                        >Register</a
+                        >
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="{{ url_for('auth.login') }}"
+                        >Log In</a
+                        >
+                    </li>
+                </ul>
+                {% endif %}
+            </li>
+            <li class="pure-menu-item pure-menu-selected">
+                <a class="pure-menu-link" href="/settings">Settings</a>
+            </li>
         </ul>
-      </div>
-      <main class="container">
-        <div class="content center">{% block content %} {% endblock %}</div>
-      </main>
     </div>
-  </body>
+    <main class="container">
+        <div class="content center">{% block content %} {% endblock %}</div>
+    </main>
+</div>
+</body>
 </html>
