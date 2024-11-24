@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Neetcode 150 Problems</h1>
+  <details>
+    <summary>Pattern Groups</summary>
+    <table>
+      <thead>
+        <tr>
+          <th>Pattern</th>
+          <th>Problems</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for pattern in patterns.items() %}
+          <tr>
+            <td>{{ pattern[0] }}</td>
+            <td>{{ pattern[1] }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </details>
+
+    <br>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Title</th>
+        <th>Pattern</th>
+        <th>Difficulty</th>
+        <th>Type</th>
+        <th>Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for problem in problems %}
+        <tr>
+          <td>{{ problem['leetcode_number'] }}</td>
+          <td>{{ problem['title'] }}</td>
+          <td>{{ problem['pa.name'] }}</td>
+          <td>
+            {% if problem['pa.difficulty_id'] == 1 %}
+              Easy
+            {% elif problem['pa.difficulty_id'] == 2 %}
+              Medium
+            {% else %}
+              Hard
+            {% endif %}
+          </td>
+          <td>
+            {% if problem['is_premium'] %}
+              Premium
+            {% else %}
+              Free
+            {% endif %}
+          </td>
+          <td>
+            <a href="{{ problem['link'] }}" target="_blank">Solve →</a>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+{% endblock %}
