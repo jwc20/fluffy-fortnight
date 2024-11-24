@@ -1,3 +1,7 @@
+// script to generate dbdiagram.io diagram
+// https://dbdiagram.io/
+
+
 // Enum definitions
 enum DifficultyLevel {
   EASY
