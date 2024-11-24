@@ -23,6 +23,6 @@ flask --app ff run --debug
 
 ## DB Schema
 
-![db schema](./img/db_schema_keys.png)
+![db schema](ff/static/assets/images/db_schema_keys.png)
 
 
