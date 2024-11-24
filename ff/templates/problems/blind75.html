@@ -1,70 +1,72 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h1>Blind 75 Problems</h1>
-  <details>
+<h1>Blind 75 Problems</h1>
+<details>
     <summary>Pattern Groups</summary>
     <table>
-      <thead>
+        <thead>
         <tr>
-          <th>Pattern</th>
-          <th>Problems</th>
+            <th>Pattern</th>
+            <th>Problems</th>
         </tr>
-      </thead>
-      <tbody>
+        </thead>
+        <tbody>
         <!-- TODO use named tuple -->
         {% for pattern in patterns.items() %}
-          <tr>
+        <tr>
             <td>{{ pattern[0] }}</td>
             <td>{{ pattern[1] }}</td>
-          </tr>
+        </tr>
         {% endfor %}
-      </tbody>
+        </tbody>
     </table>
-  </details>
+</details>
 
-    <br>
+<br>
 
-  <table>
+<table>
     <thead>
-      <tr>
+    <tr>
         <th>#</th>
+        <th>LC #</th>
         <th>Title</th>
         <th>Difficulty</th>
         <th>Type</th>
         <th>Link</th>
         <th>Patterns</th>
-      </tr>
+    </tr>
     </thead>
     <tbody>
-      {% for problem in problems %}
-        <tr>
-          <td>{{ problem['leetcode_number'] }}</td>
-          <td>{{ problem['title'] }} <span><a href="{{ problem['link'] }}" target="_blank">link</a></span></td>
-          <td>
+    {% for problem in problems %}
+    <tr>
+        <td>{{ loop.index }}</td>
+        <td>{{ problem['leetcode_number'] }}</td>
+        <td>{{ problem['title'] }} <span><a href="{{ problem['link'] }}" target="_blank">link</a></span></td>
+        <td>
             {% if problem['difficulty'] == 1 %}
-              Easy
+            Easy
             {% elif problem['difficulty'] == 2 %}
-              Medium
+            Medium
             {% else %}
-              Hard
+            Hard
             {% endif %}
-          </td>
-          <td>
+        </td>
+        <td>
             {% if problem['is_premium'] %}
-              Premium
+            Premium
             {% else %}
-              Free
+            Free
             {% endif %}
-          </td>
-          <td style="text-align: center; width: 5rem;">
+        </td>
+        <td style="text-align: center; width: 5rem;">
             <!--- TODO -->
             <a href="">Log</a>
-          </td>
-          <td style="text-align: center; width: 30rem; word-wrap: break-word">{{ problem['patterns'] }}</td>
-        </tr>
-      {% endfor %}
+        </td>
+        <td style="text-align: center; width: 30rem; word-wrap: break-word">{{ problem['patterns'] }}</td>
+    </tr>
+    {% endfor %}
     </tbody>
-  </table>
+</table>
 
 {% endblock %}k %}

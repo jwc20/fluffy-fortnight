@@ -28,8 +28,8 @@
   <table>
     <thead>
       <tr>
-        <th></th>
         <th>#</th>
+        <th>LC #</th>
         <th>Title</th>
         <th>Difficulty</th>
         <th>Type</th>
@@ -40,9 +40,7 @@
     <tbody>
       {% for problem in problems %}
         <tr>
-            <td>
-                <input type="checkbox" name="problem" value="{{ problem['leetcode_number'] }}">
-            </td>
+          <td>{{ loop.index }}</td>
           <td>{{ problem['leetcode_number'] }}</td>
           <td>{{ problem['title'] }} <span><a href="{{ problem['link'] }}" target="_blank">link</a></span></td>
           <td>
