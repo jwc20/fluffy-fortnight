@@ -212,6 +212,7 @@ Table problem_patterns {
 Table tags {
   id integer [pk, increment]
   name varchar [not null, unique]
+  endpoint varchar
   description text
   created_at timestamp [default: `now()`]
   updated_at timestamp [default: `now()`]

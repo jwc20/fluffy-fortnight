@@ -221,6 +221,7 @@ CREATE TABLE IF NOT EXISTS problem_patterns (
 CREATE TABLE IF NOT EXISTS tags (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name VARCHAR(50) NOT NULL UNIQUE,  -- e.g. "Neetcode 150", "Blind 75", "Grokking", "EPI", "Google", "Meta", ...
+    endpoint VARCHAR(50),  -- e.g. "neetcode150", "blind75", "grokking", "epi", "google", "meta", ...
     description TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -245,9 +246,4 @@ CREATE INDEX IF NOT EXISTS idx_job_applications_company ON job_applications(comp
 CREATE INDEX IF NOT EXISTS idx_interview_loops_application ON interview_loops(job_application_id, stage) WHERE deleted = FALSE;
 CREATE INDEX IF NOT EXISTS idx_interview_loops_date ON interview_loops(scheduled_date) WHERE deleted = FALSE;
 CREATE INDEX IF NOT EXISTS idx_problems_leetcode ON problems(leetcode_number) WHERE deleted = FALSE;
-
-
-
-
-
 
