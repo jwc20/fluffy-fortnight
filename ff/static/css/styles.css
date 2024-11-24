@@ -16,20 +16,20 @@
 
 .base-page {
   padding: var(--s1);
-  --color-light: #fff;
-  --color-dark: #000;
-  color: var(--color-dark);
-  background-color: var(--color-light);
+  /*--color-light: #fff;*/
+  /*--color-dark: #000;*/
+  /*color: var(--color-dark);*/
+  /*background-color: var(--color-light);*/
 }
 
-.base-page * {
-  color: inherit;
-}
+/*.base-page * {*/
+/*  color: inherit;*/
+/*}*/
 
-.base-page.invert {
-  color: var(--color-light);
-  background-color: var(--color-dark);
-}
+/*.base-page.invert {*/
+/*  color: var(--color-light);*/
+/*  background-color: var(--color-dark);*/
+/*}*/
 
 .center {
   display: block;

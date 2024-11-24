@@ -33,7 +33,7 @@
         <th>Title</th>
         <th>Difficulty</th>
         <th>Type</th>
-        <th>Link</th>
+        <th>Log</th>
         <th>Patterns</th>
       </tr>
     </thead>
@@ -44,7 +44,7 @@
                 <input type="checkbox" name="problem" value="{{ problem['leetcode_number'] }}">
             </td>
           <td>{{ problem['leetcode_number'] }}</td>
-          <td>{{ problem['title'] }}</td>
+          <td>{{ problem['title'] }} <span><a href="{{ problem['link'] }}" target="_blank">link</a></span></td>
           <td>
             {% if problem['difficulty'] == 1 %}
               Easy
@@ -62,7 +62,8 @@
             {% endif %}
           </td>
           <td style="text-align: center; width: 5rem;">
-            <a href="{{ problem['link'] }}" target="_blank">Solve →</a>
+            <!--- TODO -->
+            <a href="">Log</a>
           </td>
           <td style="text-align: center; width: 30rem; word-wrap: break-word">{{ problem['patterns'] }}</td>
         </tr>
