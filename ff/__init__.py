@@ -44,8 +44,10 @@ def create_app(test_config=None):
     app.register_blueprint(auth_bp, url_prefix='/auth')
 
     from ff.problems import bp as problems_bp
-    # app.register_blueprint(problems.bp)
     app.register_blueprint(problems_bp, url_prefix='/problems')
+
+    from ff.settings import bp as settings_bp
+    app.register_blueprint(settings_bp, url_prefix='/settings')
 
 
     @app.route('/test/')
