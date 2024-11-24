@@ -1,13 +1,22 @@
 import os
 from flask import Flask
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
+
+    port = os.getenv('FLASK_RUN_PORT', 8412)
+
     app.config.from_mapping(
-        SECRET_KEY='dev', # TODO: change this to a env var
+        SECRET_KEY=os.getenv('FLASK_SECRET_KEY', 'dev'),
         DATABASE=os.path.join(app.instance_path, 'ff.sqlite'),
+        PORT=port
     )
+
 
     if test_config is None:
         # load the instance config, if it exists, when not testing
