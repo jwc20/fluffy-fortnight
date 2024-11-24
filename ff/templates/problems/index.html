@@ -28,6 +28,7 @@
   <table>
     <thead>
       <tr>
+        <th></th>
         <th>#</th>
         <th>Title</th>
         <th>Difficulty</th>
@@ -39,6 +40,9 @@
     <tbody>
       {% for problem in problems %}
         <tr>
+            <td>
+                <input type="checkbox" name="problem" value="{{ problem['leetcode_number'] }}">
+            </td>
           <td>{{ problem['leetcode_number'] }}</td>
           <td>{{ problem['title'] }}</td>
           <td>
@@ -57,10 +61,10 @@
               Free
             {% endif %}
           </td>
-          <td>
+          <td style="text-align: center; width: 5rem;">
             <a href="{{ problem['link'] }}" target="_blank">Solve →</a>
           </td>
-          <td>{{ problem['patterns'] }}</td>
+          <td style="text-align: center; width: 30rem; word-wrap: break-word">{{ problem['patterns'] }}</td>
         </tr>
       {% endfor %}
     </tbody>

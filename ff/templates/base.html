@@ -15,7 +15,7 @@
       rel="stylesheet"
     />
     <!-- import styles.css from static-->
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
     <title>ff</title>
   </head>
   <body>
@@ -103,8 +103,7 @@
     </div>
 
           <main class="container">
-            <h1>fluffy fortnight base page</h1>
-            <div class="content">{% block content %} {% endblock %}</div>
+            <div class="content center">{% block content %} {% endblock %}</div>
           </main>
     </div>
 
