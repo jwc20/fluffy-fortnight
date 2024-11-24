@@ -1,3 +1,7 @@
+# macOS
+.DS_Store
+
+# jetbrains
 .idea/
 
 # Byte-compiled / optimized / DLL files
