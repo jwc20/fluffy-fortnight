@@ -146,6 +146,7 @@ CREATE TABLE IF NOT EXISTS problems (
     solution_notes TEXT,
     time_complexity VARCHAR(50),
     space_complexity VARCHAR(50),
+    is_premium BOOLEAN DEFAULT FALSE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     deleted_at TIMESTAMP,

@@ -1,102 +1,255 @@
-Table problems {
-  id integer [primary key]
-  leetcode_number integer [unique, note: 'Original LeetCode problem number']
-  title varchar
-  description text
-  difficulty_id integer
-  solution_notes text
-  time_complexity varchar
-  space_complexity varchar
-  created_at timestamp
-  updated_at timestamp
+// Enum definitions
+enum DifficultyLevel {
+  EASY
+  MEDIUM
+  HARD
 }
 
-Table difficulty {
-  id integer [primary key]
-  name varchar
-  priority integer [note: 'For sorting (e.g., Easy=1, Medium=2, Hard=3)']
+enum ApplicationStatus {
+  APPLIED
+  IN_PROGRESS
+  REJECTED
+  ACCEPTED
+  WITHDRAWN
 }
 
-Table problem_attempts {
-  id integer [primary key]
-  problem_id integer
-  user_id integer
-  status_id integer
-  attempt_date timestamp
-  notes text
-  code text
-  time_taken_minutes integer
-  created_at timestamp
+enum InterviewStage {
+  ONLINE_ASSESSMENT
+  PHONE_SCREEN
+  TECHNICAL_SCREEN
+  VIRTUAL_ONSITE
+  ONSITE
+  HR_SCREEN
+  BEHAVIORAL
+  TEAM_MATCHING
+  OFFER_DISCUSSION
 }
 
-Table status {
-  id integer [primary key]
-  name varchar [note: 'e.g., Solved, Attempted, Failed, Skipped']
-  description varchar
+enum InterviewStatus {
+  SCHEDULED
+  COMPLETED
+  CANCELLED
+  RESCHEDULED
+  NO_SHOW
+  PENDING_FEEDBACK
 }
 
-Table patterns {
-  id integer [primary key]
-  name varchar
-  description text
-}
-
-Table problem_patterns {
-  problem_id integer
-  pattern_id integer
-  indexes {
-    (problem_id, pattern_id)
-  }
-}
-
-Table companies {
-  id integer [primary key]
-  name varchar
+// Company Related Tables
+Table companies [headercolor: #2D6512] {
+  id integer [pk, increment]
+  name varchar [not null, unique]
   industry varchar
+  location varchar
+  website varchar
+  notes text
+  created_at timestamp [default: `now()`]
+  updated_at timestamp [default: `now()`]
+  deleted_at timestamp
+  deleted boolean [default: false]
 }
 
 Table problem_companies {
-  problem_id integer
-  company_id integer
+  problem_id integer [not null]
+  company_id integer [not null]
   last_asked timestamp
+  created_at timestamp [default: `now()`]
+  updated_at timestamp [default: `now()`]
+  deleted_at timestamp
+  deleted boolean [default: false]
+  
   indexes {
-    (problem_id, company_id)
+    (problem_id, company_id) [pk]
   }
 }
 
-Table tags {
-  id integer [primary key]
-  name varchar
+// Job Application Tables
+Table job_applications [headercolor: #2D6512] {
+  id integer [pk, increment]
+  company_id integer [not null]
+  title varchar [not null]
+  level varchar [note: 'e.g., Entry, Mid, Senior']
+  link varchar
   description text
+  salary_range varchar
+  location varchar
+  job_type varchar [note: 'Full-time, Contract, etc']
+  remote boolean [default: false]
+  status ApplicationStatus [not null, default: 'APPLIED']
+  notes text
+  date_posted date
+  date_applied date [not null]
+  date_rejected date
+  date_accepted date
+  created_at timestamp [default: `now()`]
+  updated_at timestamp [default: `now()`]
+  deleted_at timestamp
+  deleted boolean [default: false]
+
+  indexes {
+    (company_id, date_applied)
+  }
+}
+
+Table interview_loops [headercolor: #2D6512] {
+  id integer [pk, increment]
+  loop_number integer
+  job_application_id integer [not null]
+  stage InterviewStage [not null]
+  status InterviewStatus [not null, default: 'SCHEDULED']
+  scheduled_date timestamp
+  duration_minutes integer
+  interviewer_name varchar
+  interviewer_title varchar
+  location varchar [note: 'Can be virtual link or physical location']
+  feedback text
+  notes text
+  problems_asked text [note: 'Can store as JSON with problem IDs and notes']
+  coding_platform varchar [note: 'e.g., CodeSignal, HackerRank, etc']
+  created_at timestamp [default: `now()`]
+  updated_at timestamp [default: `now()`]
+  deleted_at timestamp
+  deleted boolean [default: false]
+
+  indexes {
+    (job_application_id, stage)
+    (scheduled_date)
+  }
+}
+
+// Core Problem Tables
+Table difficulty {
+  id integer [pk, increment]
+  name varchar [not null, unique]
+  priority integer [not null, note: 'For sorting (e.g., Easy=1, Medium=2, Hard=3)']
+  created_at timestamp [default: `now()`]
+  updated_at timestamp [default: `now()`]
+  deleted_at timestamp
+  deleted boolean [default: false]
+}
+
+Table problems {
+  id integer [pk, increment]
+  leetcode_number integer [unique, not null, note: 'Original LeetCode problem number']
+  title varchar [not null]
+  link varchar
+  description text
+  difficulty_id integer [not null]
+  solution_notes text
+  time_complexity varchar
+  space_complexity varchar
+  is_premium boolean [default: false]
+  created_at timestamp [default: `now()`]
+  updated_at timestamp [default: `now()`]
+  deleted_at timestamp
+  deleted boolean [default: false]
+}
+
+// Problem Status and Attempts
+Table problem_status {
+  id integer [pk, increment]
+  solved boolean [default: false]
+  notes varchar
+  created_at timestamp [default: `now()`]
+  updated_at timestamp [default: `now()`]
+  deleted_at timestamp
+  deleted boolean [default: false]
+}
+
+Table users [headercolor: #990D0D] {
+  id integer [pk, increment]
+  username varchar [not null, unique]
+  password varchar [not null]
+  created_at timestamp [default: `now()`]
+  updated_at timestamp [default: `now()`]
+  deleted_at timestamp
+  deleted boolean [default: false]
+}
+
+Table problem_attempts {
+  id integer [pk, increment]
+  problem_id integer [not null]
+  user_id integer [not null]
+  status_id integer [not null]
+  attempt_date timestamp [default: `now()`]
+  notes text
+  code text
+  time_taken_minutes integer
+  created_at timestamp [default: `now()`]
+  updated_at timestamp [default: `now()`]
+  deleted_at timestamp
+  deleted boolean [default: false]
+}
+
+// Problem Patterns
+Table patterns {
+  id integer [pk, increment]
+  name varchar [not null, unique]
+  description text
+  created_at timestamp [default: `now()`]
+  updated_at timestamp [default: `now()`]
+  deleted_at timestamp
+  deleted boolean [default: false]
+}
+
+Table problem_patterns {
+  problem_id integer [not null]
+  pattern_id integer [not null]
+  created_at timestamp [default: `now()`]
+  updated_at timestamp [default: `now()`]
+  deleted_at timestamp
+  deleted boolean [default: false]
+  
+  indexes {
+    (problem_id, pattern_id) [pk]
+  }
+}
+
+// Problem Tags
+Table tags {
+  id integer [pk, increment]
+  name varchar [not null, unique]
+  description text
+  created_at timestamp [default: `now()`]
+  updated_at timestamp [default: `now()`]
+  deleted_at timestamp
+  deleted boolean [default: false]
 }
 
 Table problem_tags {
-  problem_id integer
-  tag_id integer
+  problem_id integer [not null]
+  tag_id integer [not null]
+  created_at timestamp [default: `now()`]
+  updated_at timestamp [default: `now()`]
+  deleted_at timestamp
+  deleted boolean [default: false]
+  
   indexes {
-    (problem_id, tag_id)
+    (problem_id, tag_id) [pk]
   }
 }
 
-Table users {
-  id integer [primary key]
-  username varchar
-  password varchar
-  created_at timestamp
-}
+// Relationships grouped by domain
+// Company and Job Application relationships
+Ref: job_applications.company_id > companies.id
+Ref: interview_loops.job_application_id > job_applications.id
+Ref: problem_companies.company_id > companies.id
 
-// One-to-Many relationships
+// Core problem relationships
 Ref: problems.difficulty_id > difficulty.id
+Ref: problem_companies.problem_id > problems.id
+
+// Attempt relationships
 Ref: problem_attempts.problem_id > problems.id
 Ref: problem_attempts.user_id > users.id
-Ref: problem_attempts.status_id > status.id
+Ref: problem_attempts.status_id > problem_status.id
 
-// Many-to-Many relationships
+// Pattern relationships
 Ref: problem_patterns.problem_id > problems.id
 Ref: problem_patterns.pattern_id > patterns.id
 
-Ref: problem_companies.problem_id > problems.id
-Ref: problem_companies.company_id > companies.id
-
+// Tag relationships
 Ref: problem_tags.problem_id > problems.id
 Ref: problem_tags.tag_id > tags.id
+
+
+
