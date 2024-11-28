@@ -45,6 +45,10 @@ CREATE INDEX idx_problems_difficulty ON problems(difficulty);
 - [ ] add rating column to problems table
 - [ ] add rating column for job_applications table
 - [ ] add job_listings table
+- [ ] remove time_complexity and space_complexity columns from problems table
+- [ ] change solution_notes to notes in problems table
+
+-> Update schema.sql and dbdiagram.txt when updating db.
 
 
 ## deploy

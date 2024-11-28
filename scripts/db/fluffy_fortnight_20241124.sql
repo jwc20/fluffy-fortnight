@@ -1,13 +1,3 @@
-
-
-
-
-
-
-
-
-
-
 delete from problems where deleted=0;
 
 select * from problems;
@@ -742,3 +732,37 @@ select * from problems where leetcode_number in (1899, 1851, 2013);
 select * from problem_tags where problem_id=271
 
 -- insert into problem_tags (problem_id, tag_id) values (271, 1);
+
+
+
+
+
+PRAGMA table_info(problems);
+-- 0,id,INTEGER,0,,1
+-- 1,leetcode_number,INTEGER,1,,0
+-- 2,title,VARCHAR(255),1,,0
+-- 3,link,VARCHAR(512),0,,0
+-- 4,description,TEXT,0,,0
+-- 5,difficulty_id,INTEGER,1,,0
+-- 6,solution_notes,TEXT,0,,0
+-- 7,time_complexity,VARCHAR(50),0,,0
+-- 8,space_complexity,VARCHAR(50),0,,0
+-- 9,is_premium,BOOLEAN,0,FALSE,0
+-- 10,created_at,TIMESTAMP,0,CURRENT_TIMESTAMP,0
+-- 11,updated_at,TIMESTAMP,0,CURRENT_TIMESTAMP,0
+-- 12,deleted_at,TIMESTAMP,0,,0
+-- 13,deleted,BOOLEAN,0,FALSE,0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
