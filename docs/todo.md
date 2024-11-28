@@ -42,6 +42,11 @@ CREATE INDEX idx_problems_number ON problems(leetcode_number);
 CREATE INDEX idx_problems_difficulty ON problems(difficulty);
 ```
 
+- [ ] add rating column to problems table
+- [ ] add rating column for job_applications table
+- [ ] add job_listings table
+
+
 ## deploy
 
 - [ ] add Docker, docker-compose files
