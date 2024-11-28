@@ -1,7 +1,7 @@
 from flask import render_template
 
 from ff.db import get_db
-from ff.problems import bp
+from ff.views.problems import bp
 
 
 def write_query(endpoint):

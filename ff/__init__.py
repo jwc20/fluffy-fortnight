@@ -1,22 +1,11 @@
 import os
 from flask import Flask
-from dotenv import load_dotenv
-
-load_dotenv()
-
+from ff.config import Config
 
 def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
-
-    port = os.getenv('FLASK_RUN_PORT', 8412)
-
-    app.config.from_mapping(
-        SECRET_KEY=os.getenv('FLASK_SECRET_KEY', 'dev'),
-        DATABASE=os.path.join(app.instance_path, 'ff.sqlite'),
-        PORT=port
-    )
-
+    app.config.from_object(Config(app.instance_path))
 
     if test_config is None:
         # load the instance config, if it exists, when not testing
@@ -36,17 +25,17 @@ def create_app(test_config=None):
     db.init_app(app)
 
     # register blueprints
-    from ff.main import bp as main_bp
+    from ff.views.main import bp as main_bp
     app.register_blueprint(main_bp)
     app.add_url_rule('/', endpoint='index')
 
-    from ff.auth import bp as auth_bp
+    from ff.views.auth import bp as auth_bp
     app.register_blueprint(auth_bp, url_prefix='/auth')
 
-    from ff.problems import bp as problems_bp
+    from ff.views.problems import bp as problems_bp
     app.register_blueprint(problems_bp, url_prefix='/problems')
 
-    from ff.settings import bp as settings_bp
+    from ff.views.settings import bp as settings_bp
     app.register_blueprint(settings_bp, url_prefix='/settings')
 
 

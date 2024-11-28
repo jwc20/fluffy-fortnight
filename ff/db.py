@@ -4,9 +4,6 @@ from datetime import datetime
 import click
 from flask import current_app, g
 
-# scripts/db/seed/seed.py is a script that populates the database with some initial data.
-# import the file seed.py from the scripts/db/seed directory
-
 from ff.seed.run import init_seed
 
 

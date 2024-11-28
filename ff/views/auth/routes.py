@@ -1,6 +1,5 @@
 import functools
 from flask import (
-    Blueprint,
     flash,
     g,
     redirect,
@@ -12,7 +11,7 @@ from flask import (
 from werkzeug.security import check_password_hash, generate_password_hash
 from ff.db import get_db
 
-from ff.auth import bp
+from ff.views.auth import bp
 
 
 @bp.route("/register", methods=("GET", "POST"))

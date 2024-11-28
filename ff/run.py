@@ -10,5 +10,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-    port = app.config.get('PORT', 8412)
+    port = app.config.get('PORT', 5000)
     app.run(host='localhost', port=port, debug=True)
