@@ -27,11 +27,11 @@
 
 - [ ] add new tables
 
-  - [ ] auto_regulation
-  - [ ] attempt_auto_regulation
+  - [x] auto_regulation -> rating
+  - [x] attempt_auto_regulation
 
-- [ ] remove difficulty table
-- [ ] change difficulty_id column in problems table to difficulty
+- [x] remove difficulty table
+- [x] change difficulty_id column in problems table to difficulty_rating
 
 - [ ] add indexes for problems table
 
@@ -39,14 +39,13 @@
 CREATE INDEX idx_tags_endpoint ON tags(endpoint);
 CREATE INDEX idx_problem_tags ON problem_tags(problem_id, tag_id);
 CREATE INDEX idx_problems_number ON problems(leetcode_number);
-CREATE INDEX idx_problems_difficulty ON problems(difficulty);
 ```
 
-- [ ] add rating column to problems table
-- [ ] add rating column for job_applications table
-- [ ] add job_listings table
-- [ ] remove time_complexity and space_complexity columns from problems table
-- [ ] change solution_notes to notes in problems table
+- [x] add rating column to problems table
+- [x] add difficulty_rating column for job_listings table
+- [x] add job_listings table
+- [x] remove time_complexity and space_complexity columns from problems table
+- [x] change solution_notes to notes in problems table
 
 -> Update schema.sql and dbdiagram.txt when updating db.
 
