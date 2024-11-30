@@ -4,7 +4,7 @@ from datetime import datetime
 import click
 from flask import current_app, g
 
-from scripts.db.seed import init_seed
+from scripts.db.seed.run import init_seed
 
 
 def get_db():
