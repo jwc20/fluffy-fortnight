@@ -7,10 +7,10 @@
 -- DROP TABLE IF EXISTS problem_attempts;
 -- DROP TABLE IF EXISTS interview_loops;
 -- DROP TABLE IF EXISTS job_applications;
+-- DROP TABLE IF EXISTS job_listings;
 -- DROP TABLE IF EXISTS tags;
 -- DROP TABLE IF EXISTS patterns;
 -- DROP TABLE IF EXISTS problems;
--- DROP TABLE IF EXISTS difficulty;
 -- DROP TABLE IF EXISTS problem_status;
 -- DROP TABLE IF EXISTS users;
 -- DROP TABLE IF EXISTS companies;
@@ -62,34 +62,31 @@ CREATE TABLE IF NOT EXISTS companies (
     deleted BOOLEAN DEFAULT FALSE
 );
 
-CREATE TABLE IF NOT EXISTS problem_companies (
-    problem_id INTEGER NOT NULL,
-    company_id INTEGER NOT NULL,
-    last_asked TIMESTAMP,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    deleted_at TIMESTAMP,
-    deleted BOOLEAN DEFAULT FALSE,
-    PRIMARY KEY (problem_id, company_id),
-    FOREIGN KEY (problem_id) REFERENCES problems (id),
-    FOREIGN KEY (company_id) REFERENCES companies (id)
-);
-
--- Job Application Tables
-CREATE TABLE IF NOT EXISTS job_applications (
+CREATE TABLE IF NOT EXISTS job_listings (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     company_id INTEGER NOT NULL,
     title VARCHAR(255) NOT NULL,
     level VARCHAR(50),
     link VARCHAR(512),
     description TEXT,
-    salary_range VARCHAR(100),
-    location VARCHAR(255),
     job_type VARCHAR(50),
     remote BOOLEAN DEFAULT FALSE,
-    status VARCHAR(50) NOT NULL DEFAULT 'APPLIED',
-    notes TEXT,
+    salary_range VARCHAR(100),
     date_posted DATE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    deleted_at TIMESTAMP,
+    deleted BOOLEAN DEFAULT FALSE,
+    FOREIGN KEY (company_id) REFERENCES companies (id)
+);
+
+CREATE TABLE IF NOT EXISTS job_applications (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    job_listing_id INTEGER NOT NULL,
+    user_id INTEGER NOT NULL,
+    status VARCHAR(50) NOT NULL DEFAULT 'APPLIED',
+    location VARCHAR(255),
+    notes TEXT,
     date_applied DATE NOT NULL,
     date_rejected DATE,
     date_accepted DATE,
@@ -97,7 +94,8 @@ CREATE TABLE IF NOT EXISTS job_applications (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     deleted_at TIMESTAMP,
     deleted BOOLEAN DEFAULT FALSE,
-    FOREIGN KEY (company_id) REFERENCES companies (id),
+    FOREIGN KEY (job_listing_id) REFERENCES job_listings (id),
+    FOREIGN KEY (user_id) REFERENCES users (id),
     FOREIGN KEY (status) REFERENCES application_status (name)
 );
 
@@ -114,6 +112,7 @@ CREATE TABLE IF NOT EXISTS interview_loops (
     location VARCHAR(512),
     feedback TEXT,
     notes TEXT,
+    difficulty_rating INTEGER NOT NULL,
     problems_asked TEXT,
     coding_platform VARCHAR(100),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -126,32 +125,33 @@ CREATE TABLE IF NOT EXISTS interview_loops (
 );
 
 -- Core Problem Tables
-CREATE TABLE IF NOT EXISTS difficulty (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name VARCHAR(50) NOT NULL UNIQUE,
-    priority INTEGER NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    deleted_at TIMESTAMP,
-    deleted BOOLEAN DEFAULT FALSE
-);
-
 CREATE TABLE IF NOT EXISTS problems (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     leetcode_number INTEGER UNIQUE NOT NULL,
     title VARCHAR(255) NOT NULL,
     link VARCHAR(512),
     description TEXT,
-    difficulty_id INTEGER NOT NULL,
-    solution_notes TEXT,
-    time_complexity VARCHAR(50),
-    space_complexity VARCHAR(50),
+    difficulty_rating INTEGER NOT NULL,
+    notes TEXT,
+    rating INTEGER,
     is_premium BOOLEAN DEFAULT FALSE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     deleted_at TIMESTAMP,
+    deleted BOOLEAN DEFAULT FALSE
+);
+
+CREATE TABLE IF NOT EXISTS problem_companies (
+    problem_id INTEGER NOT NULL,
+    company_id INTEGER NOT NULL,
+    last_asked TIMESTAMP,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    deleted_at TIMESTAMP,
     deleted BOOLEAN DEFAULT FALSE,
-    FOREIGN KEY (difficulty_id) REFERENCES difficulty (id)
+    PRIMARY KEY (problem_id, company_id),
+    FOREIGN KEY (problem_id) REFERENCES problems (id),
+    FOREIGN KEY (company_id) REFERENCES companies (id)
 );
 
 -- Problem Status and Attempts
@@ -183,6 +183,7 @@ CREATE TABLE IF NOT EXISTS problem_attempts (
     attempt_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     notes TEXT,
     code TEXT,
+    difficulty_rating INTEGER NOT NULL,
     time_taken_minutes INTEGER,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -216,12 +217,11 @@ CREATE TABLE IF NOT EXISTS problem_patterns (
     FOREIGN KEY (pattern_id) REFERENCES patterns (id)
 );
 
-
 -- Problem Tags
 CREATE TABLE IF NOT EXISTS tags (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name VARCHAR(50) NOT NULL UNIQUE,  -- e.g. "Neetcode 150", "Blind 75", "Grokking", "EPI", "Google", "Meta", ...
-    endpoint VARCHAR(50),  -- e.g. "neetcode150", "blind75", "grokking", "epi", "google", "meta", ...
+    name VARCHAR(50) NOT NULL UNIQUE,
+    endpoint VARCHAR(50),
     description TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -242,8 +242,8 @@ CREATE TABLE IF NOT EXISTS problem_tags (
 );
 
 -- Create indexes
-CREATE INDEX IF NOT EXISTS idx_job_applications_company ON job_applications(company_id, date_applied) WHERE deleted = FALSE;
+CREATE INDEX IF NOT EXISTS idx_job_listings_company ON job_listings(company_id) WHERE deleted = FALSE;
+CREATE INDEX IF NOT EXISTS idx_job_applications_listing ON job_applications(job_listing_id, user_id, date_applied) WHERE deleted = FALSE;
 CREATE INDEX IF NOT EXISTS idx_interview_loops_application ON interview_loops(job_application_id, stage) WHERE deleted = FALSE;
 CREATE INDEX IF NOT EXISTS idx_interview_loops_date ON interview_loops(scheduled_date) WHERE deleted = FALSE;
 CREATE INDEX IF NOT EXISTS idx_problems_leetcode ON problems(leetcode_number) WHERE deleted = FALSE;
-

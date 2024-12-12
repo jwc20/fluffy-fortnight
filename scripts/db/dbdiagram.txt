@@ -66,21 +66,35 @@ Table problem_companies {
   }
 }
 
-// Job Application Tables
-Table job_applications [headercolor: #2D6512] {
+Table job_listings [headercolor: #2D6512] {
   id integer [pk, increment]
   company_id integer [not null]
   title varchar [not null]
   level varchar [note: 'e.g., Entry, Mid, Senior']
   link varchar
   description text
-  salary_range varchar
-  location varchar
   job_type varchar [note: 'Full-time, Contract, etc']
   remote boolean [default: false]
-  status ApplicationStatus [not null, default: 'APPLIED']
-  notes text
+  salary_range varchar
   date_posted date
+  created_at timestamp [default: `now()`]
+  updated_at timestamp [default: `now()`]
+  deleted_at timestamp
+  deleted boolean [default: false]
+
+  indexes {
+    (company_id)
+  }
+}
+
+// Job Application Tables
+Table job_applications [headercolor: #2D6512] {
+  id integer [pk, increment]
+  job_listing_id integer [not null]
+  user_id integer [not null]
+  status ApplicationStatus [not null, default: 'APPLIED']
+  location varchar
+  notes text
   date_applied date [not null]
   date_rejected date
   date_accepted date
@@ -90,7 +104,7 @@ Table job_applications [headercolor: #2D6512] {
   deleted boolean [default: false]
 
   indexes {
-    (company_id, date_applied)
+    (job_listing_id,user_id,date_applied)
   }
 }
 
@@ -107,6 +121,7 @@ Table interview_loops [headercolor: #2D6512] {
   location varchar [note: 'Can be virtual link or physical location']
   feedback text
   notes text
+  difficulty_rating integer [not null, note: 'For sorting (e.g., 1-4)']
   problems_asked text [note: 'Can store as JSON with problem IDs and notes']
   coding_platform varchar [note: 'e.g., CodeSignal, HackerRank, etc']
   created_at timestamp [default: `now()`]
@@ -120,16 +135,18 @@ Table interview_loops [headercolor: #2D6512] {
   }
 }
 
-// Core Problem Tables
-Table difficulty {
-  id integer [pk, increment]
-  name varchar [not null, unique]
-  priority integer [not null, note: 'For sorting (e.g., Easy=1, Medium=2, Hard=3)']
-  created_at timestamp [default: `now()`]
-  updated_at timestamp [default: `now()`]
-  deleted_at timestamp
-  deleted boolean [default: false]
-}
+
+
+// // Core Problem Tables
+// Table difficulty {
+//   id integer [pk, increment]
+//   name varchar [not null, unique]
+//   priority integer [not null, note: 'For sorting (e.g., Easy=1, Medium=2, Hard=3)']
+//   created_at timestamp [default: `now()`]
+//   updated_at timestamp [default: `now()`]
+//   deleted_at timestamp
+//   deleted boolean [default: false]
+// }
 
 Table problems {
   id integer [pk, increment]
@@ -137,10 +154,11 @@ Table problems {
   title varchar [not null]
   link varchar
   description text
-  difficulty_id integer [not null]
-  solution_notes text
-  time_complexity varchar
-  space_complexity varchar
+  difficulty_rating integer [not null, note: 'For sorting (e.g., 1-4)']
+  notes text
+  // time_complexity varchar
+  // space_complexity varchar
+  rating integer
   is_premium boolean [default: false]
   created_at timestamp [default: `now()`]
   updated_at timestamp [default: `now()`]
@@ -169,7 +187,7 @@ Table users [headercolor: #990D0D] {
   deleted boolean [default: false]
 }
 
-Table problem_attempts {
+Table problem_attempts [headercolor: #E4A62E] {
   id integer [pk, increment]
   problem_id integer [not null]
   user_id integer [not null]
@@ -177,6 +195,7 @@ Table problem_attempts {
   attempt_date timestamp [default: `now()`]
   notes text
   code text
+  difficulty_rating integer [not null, note: 'For sorting (e.g., 1-4)']
   time_taken_minutes integer
   created_at timestamp [default: `now()`]
   updated_at timestamp [default: `now()`]
@@ -185,7 +204,7 @@ Table problem_attempts {
 }
 
 // Problem Patterns
-Table patterns {
+Table patterns [headercolor: #EB801B] {
   id integer [pk, increment]
   name varchar [not null, unique]
   description text
@@ -195,21 +214,21 @@ Table patterns {
   deleted boolean [default: false]
 }
 
-Table problem_patterns {
+Table problem_patterns [headercolor: #EB801B] {
   problem_id integer [not null]
   pattern_id integer [not null]
   created_at timestamp [default: `now()`]
   updated_at timestamp [default: `now()`]
   deleted_at timestamp
   deleted boolean [default: false]
-  
+
   indexes {
     (problem_id, pattern_id) [pk]
   }
 }
 
 // Problem Tags
-Table tags {
+Table tags [headercolor: #DE65C3] {
   id integer [pk, increment]
   name varchar [not null, unique]
   endpoint varchar
@@ -220,14 +239,14 @@ Table tags {
   deleted boolean [default: false]
 }
 
-Table problem_tags {
+Table problem_tags [headercolor: #DE65C3] {
   problem_id integer [not null]
   tag_id integer [not null]
   created_at timestamp [default: `now()`]
   updated_at timestamp [default: `now()`]
   deleted_at timestamp
   deleted boolean [default: false]
-  
+
   indexes {
     (problem_id, tag_id) [pk]
   }
@@ -235,12 +254,20 @@ Table problem_tags {
 
 // Relationships grouped by domain
 // Company and Job Application relationships
-Ref: job_applications.company_id > companies.id
+// Ref: job_applications.company_id > companies.id
+// Ref: interview_loops.job_application_id > job_applications.id
+// Ref: problem_companies.company_id > companies.id
+
+
+Ref: job_listings.company_id > companies.id
+Ref: job_applications.job_listing_id - job_listings.id
 Ref: interview_loops.job_application_id > job_applications.id
-Ref: problem_companies.company_id > companies.id
+Ref: job_applications.user_id > users.id
+
+
 
 // Core problem relationships
-Ref: problems.difficulty_id > difficulty.id
+// Ref: problems.difficulty_id > difficulty.id
 Ref: problem_companies.problem_id > problems.id
 
 // Attempt relationships
@@ -255,6 +282,3 @@ Ref: problem_patterns.pattern_id > patterns.id
 // Tag relationships
 Ref: problem_tags.problem_id > problems.id
 Ref: problem_tags.tag_id > tags.id
-
-
-
