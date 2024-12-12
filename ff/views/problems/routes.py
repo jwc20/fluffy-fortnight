@@ -8,8 +8,8 @@ def write_query(endpoint):
     if endpoint is not None:
         return (
             f"""SELECT p.id, p.leetcode_number, p.title, p.link, p.description, 
-            p.difficulty_id as difficulty, p.solution_notes, p.time_complexity, 
-            p.space_complexity, p.is_premium, p.created_at, p.updated_at, p.deleted_at, 
+            p.difficulty_rating as difficulty, 
+            p.is_premium, p.created_at, p.updated_at, p.deleted_at, 
             p.deleted, t.name as tag_name, GROUP_CONCAT(pa.name, ", ") as patterns 
             FROM problems p 
             LEFT JOIN problem_tags pt ON p.id=pt.problem_id 
@@ -22,8 +22,8 @@ def write_query(endpoint):
         )
     else:
         return """SELECT p.id, p.leetcode_number, p.title, p.link, p.description, 
-            p.difficulty_id as difficulty, p.solution_notes, p.time_complexity, 
-            p.space_complexity, p.is_premium, p.created_at, p.updated_at, p.deleted_at, 
+            p.difficulty_rating as difficulty, 
+            p.is_premium, p.created_at, p.updated_at, p.deleted_at, 
             p.deleted, GROUP_CONCAT(pa.name, ", ") as patterns
             FROM problems p
             LEFT JOIN problem_patterns pp ON p.id=pp.problem_id

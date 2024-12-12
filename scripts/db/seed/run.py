@@ -8,12 +8,9 @@ def is_sql_file_empty(file_path):
 
 
 def init_seed(_db, _current_app):
-    # Use pathlib for more reliable path handling
-    sql_dir = Path(_current_app.root_path) / 'seed' / 'sql'
+    sql_dir = Path(_current_app.root_path) / '..' / 'scripts'/ 'db' / 'seed' / 'sql'
 
-    # Get all .sql files in the directory
     sql_files = sorted([f for f in sql_dir.glob('*.sql')])
-
 
     for sql_file in sql_files:
         # Check if file is empty
