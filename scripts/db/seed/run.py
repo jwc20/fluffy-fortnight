@@ -1,5 +1,7 @@
 import os
 from pathlib import Path
+from scripts.etl.fetch_lc_problems import get_lc_problems
+import asyncio
 
 
 def is_sql_file_empty(file_path):
@@ -9,6 +11,8 @@ def is_sql_file_empty(file_path):
 
 def init_seed(_db, _current_app):
     sql_dir = Path(_current_app.root_path) / '..' / 'scripts'/ 'db' / 'seed' / 'sql'
+
+    get_lc_problems()
 
     sql_files = sorted([f for f in sql_dir.glob('*.sql')])
 
