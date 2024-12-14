@@ -3,6 +3,7 @@ import json
 import datetime
 import pandas as pd
 from pathlib import Path
+import asyncio
 
 # TODO: To get leetcode progression data, we need to have login information
 # import dotenv
@@ -44,22 +45,21 @@ def create_lc_problems_df(_data):
     headers = ["frontend_question_id", "question__title", "question__title_slug", "difficulty", "paid_only"]
     return pd.DataFrame([[ p["stat"]["frontend_question_id"], p["stat"]["question__title"], p["stat"]["question__title_slug"], p["difficulty"]["level"], p["paid_only"] ] for p in problems], columns=headers)
 
-def export_as_csv_zip(_data):
-    problems = _data["stat_status_pairs"]
+# def export_as_csv_zip(_data):
+#     problems = _data["stat_status_pairs"]
+#     df = create_lc_problems_df(_data)
+#     df.to_csv(f'lc_problems_{current_datetime_str}.zip', index=False, compression=compression_opts)
+
+def export_as_csv(_data, _filepath):
     df = create_lc_problems_df(_data)
-    df.to_csv(f'lc_problems_{current_datetime_str}.zip', index=False, compression=compression_opts)
+    df.to_csv(_filepath, index=False)
 
-def export_as_csv(_data):
-    # filepath = Path('scripts/db/seed/csv') / f'lc_problems_{current_datetime_str}.csv'
-
-    filepath = Path('scripts/db/seed/csv') / f'lc_problems_{current_datetime_str}.csv'
-
-    df = create_lc_problems_df(_data)
-    df.to_csv(filepath, index=False)
-
-def get_lc_problems():
+async def get_lc_problems():
     data = fetch_lc_problems_as_json()
-    export_as_csv(data)
+    filepath = Path('scripts/db/seed/csv') / f'lc_problems_{current_datetime_str}.csv'
+    export_as_csv(data, filepath)
+    return filepath
+
 
 
 # if __name__ == '__main__':
