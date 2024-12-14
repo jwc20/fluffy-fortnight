@@ -6,12 +6,15 @@ from flask import current_app, g
 
 from scripts.db.seed.run import init_seed
 
+import asyncio
+
 
 def get_db():
     if 'db' not in g:
         g.db = sqlite3.connect(
             current_app.config['DATABASE'],
-            detect_types=sqlite3.PARSE_DECLTYPES
+            detect_types=sqlite3.PARSE_DECLTYPES,
+            check_same_thread=False
         )
         g.db.row_factory = sqlite3.Row
 
@@ -32,7 +35,8 @@ def init_db():
 
 def seed_db():
     db = get_db()
-    init_seed(db, current_app)
+    # init_seed(db, current_app)
+    asyncio.run(init_seed(db, current_app))
 
 
 @click.command('init-db')
