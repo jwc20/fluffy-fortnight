@@ -1,3 +1,5 @@
+drop table if exists leetcode_dataset_no_companies_patterns_columns;
+
 create table leetcode_dataset_no_companies_patterns_columns
 (
     id              integer,

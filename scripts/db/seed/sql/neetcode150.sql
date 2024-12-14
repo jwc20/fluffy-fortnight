@@ -1,3 +1,6 @@
+
+drop table if exists neetcode150;
+
 create table neetcode150
 (
     pattern       text,
