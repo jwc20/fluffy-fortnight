@@ -1,3 +1,6 @@
+-- Delete all data from the table
+DELETE FROM patterns WHERE 1=1;
+
 -- Initial Data: Patterns
 INSERT OR IGNORE INTO patterns (name) VALUES
 ('1d_dynamic_programming'),

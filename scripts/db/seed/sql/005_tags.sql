@@ -1,3 +1,7 @@
+-- Delete all data from the table
+DELETE FROM tags WHERE 1=1;
+
+
 -- Initial Data: Tags (Problem Categories)
 INSERT OR IGNORE INTO tags (name, endpoint, description) VALUES
 ('Neetcode 150', 'neetcode150', 'Problems from the Neetcode 150 list'),
