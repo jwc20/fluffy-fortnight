@@ -21,12 +21,12 @@ async def generate_sql_insert_query(row):
 
     # Escape single quotes in title by replacing ' with ''
     escaped_title = row['question__title'].replace("'", "''")
-    escaped_slug = row['question__title_slug'].replace("'", "''")
+    link_slug = "https://leetcode.com/problems/" + row['question__title_slug']
 
     return (
         f"INSERT INTO problems (leetcode_number, title, link, difficulty_rating, is_premium) "
         f"VALUES ({row['frontend_question_id']}, '{escaped_title}', "
-        f"'{escaped_slug}', {row['difficulty']}, {row['paid_only']});"
+        f"'{link_slug}', {row['difficulty']}, {row['paid_only']});"
     )
 
 
