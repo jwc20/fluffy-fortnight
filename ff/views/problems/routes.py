@@ -12,9 +12,9 @@ def write_query(endpoint):
             p.is_premium, p.created_at, p.updated_at, p.deleted_at, 
             p.deleted, t.name as tag_name, GROUP_CONCAT(pa.name, ", ") as patterns 
             FROM problems p 
-            LEFT JOIN problem_tags pt ON p.id=pt.problem_id 
+            LEFT JOIN problem_tags pt ON p.leetcode_number=pt.problem_id 
             LEFT JOIN tags t ON pt.tag_id=t.id 
-            LEFT JOIN problem_patterns pp ON p.id=pp.problem_id 
+            LEFT JOIN problem_patterns pp ON p.leetcode_number=pp.problem_id 
             LEFT JOIN patterns pa ON pp.pattern_id=pa.id 
             WHERE t.endpoint="{endpoint}" 
             GROUP BY p.id 
@@ -26,7 +26,7 @@ def write_query(endpoint):
             p.is_premium, p.created_at, p.updated_at, p.deleted_at, 
             p.deleted, GROUP_CONCAT(pa.name, ", ") as patterns
             FROM problems p
-            LEFT JOIN problem_patterns pp ON p.id=pp.problem_id
+            LEFT JOIN problem_patterns pp ON p.leetcode_number=pp.problem_id
             LEFT JOIN patterns pa ON pp.pattern_id=pa.id
             GROUP BY p.id
             ORDER BY p.leetcode_number;"""
