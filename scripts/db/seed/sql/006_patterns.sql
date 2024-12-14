@@ -1,6 +1,10 @@
 -- Delete all data from the table
 DELETE FROM patterns WHERE 1=1;
 
+-- Reset the autoincrement sequence
+DELETE FROM sqlite_sequence WHERE name='patterns';
+
+
 -- Initial Data: Patterns
 INSERT OR IGNORE INTO patterns (name) VALUES
 ('1d_dynamic_programming'),
