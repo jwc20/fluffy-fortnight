@@ -1,3 +1,6 @@
+
+drop table if exists blind75;
+
 create table blind75
 (
     pattern       text,
