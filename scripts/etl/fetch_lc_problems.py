@@ -4,13 +4,10 @@ import datetime
 import pandas as pd
 from pathlib import Path
 import asyncio
-
-# TODO: To get leetcode progression data, we need to have login information
-# import dotenv
-# dotenv.load_dotenv()
+import aiohttp
 
 current_datetime = datetime.datetime.now()
-current_datetime_str = current_datetime.strftime('%Y-%m-%d_%H-%M-%S')
+current_datetime_str = current_datetime.strftime("%Y-%m-%d_%H-%M-%S")
 
 script = """
 splash:go(args.url)
@@ -26,43 +23,93 @@ local json = get_json()
 return {json=json}
 """
 
-def fetch_lc_problems_as_json():
-    resp = requests.post('https://splash.tearsjobs.careers/run', json={
-        'lua_source': script,
-        'url': 'https://leetcode.com/api/problems/algorithms/'
-    })
 
-    _data = json.loads(resp.json()['json'])
-    _data = json.loads(_data)
-    return _data
+async def fetch_lc_problems_as_json():
+    """Fetch LeetCode problems asynchronously using aiohttp."""
+    async with aiohttp.ClientSession() as session:
+        async with session.post(
+            "https://splash.tearsjobs.careers/run",
+            json={
+                "lua_source": script,
+                "url": "https://leetcode.com/api/problems/algorithms/",
+            },
+        ) as response:
+            resp_json = await response.json()
+            data = json.loads(resp_json["json"])
+            return json.loads(data)
 
-def export_as_json(_data):
-    with open(f'lc_problems_{current_datetime_str}.json', 'w') as f:
-        json.dump(_data, f)
 
-def create_lc_problems_df(_data):
-    problems = _data["stat_status_pairs"]
-    headers = ["frontend_question_id", "question__title", "question__title_slug", "difficulty", "paid_only"]
-    return pd.DataFrame([[ p["stat"]["frontend_question_id"], p["stat"]["question__title"], p["stat"]["question__title_slug"], p["difficulty"]["level"], p["paid_only"] ] for p in problems], columns=headers)
+async def export_as_json(data, filename=None):
+    """Export data as JSON asynchronously."""
+    if filename is None:
+        filename = f"lc_problems_{current_datetime_str}.json"
 
-# def export_as_csv_zip(_data):
-#     problems = _data["stat_status_pairs"]
-#     df = create_lc_problems_df(_data)
-#     df.to_csv(f'lc_problems_{current_datetime_str}.zip', index=False, compression=compression_opts)
+    async with aiofiles.open(filename, "w") as f:
+        await f.write(json.dumps(data))
+    return filename
 
-def export_as_csv(_data, _filepath):
-    df = create_lc_problems_df(_data)
-    df.to_csv(_filepath, index=False)
 
-async def get_lc_problems():
-    data = fetch_lc_problems_as_json()
-    filepath = Path('scripts/db/seed/csv') / f'lc_problems_{current_datetime_str}.csv'
-    export_as_csv(data, filepath)
+def create_lc_problems_df(data):
+    """Create DataFrame from LeetCode problems data."""
+    problems = data["stat_status_pairs"]
+    headers = [
+        "frontend_question_id",
+        "question__title",
+        "question__title_slug",
+        "difficulty",
+        "paid_only",
+    ]
+    return pd.DataFrame(
+        [
+            [
+                p["stat"]["frontend_question_id"],
+                p["stat"]["question__title"],
+                p["stat"]["question__title_slug"],
+                p["difficulty"]["level"],
+                p["paid_only"],
+            ]
+            for p in problems
+        ],
+        columns=headers,
+    )
+
+
+async def export_as_csv(data, filepath):
+    """Export DataFrame as CSV asynchronously."""
+    df = create_lc_problems_df(data)
+
+    # sort by frontend_question_id
+    df = df.sort_values(by='frontend_question_id')
+
+    # Use run_in_executor for CPU-bound pandas operation
+    loop = asyncio.get_event_loop()
+    await loop.run_in_executor(None, df.to_csv, filepath)
     return filepath
 
 
+async def get_lc_problems():
+    """Main function to orchestrate the fetching and processing of LeetCode problems."""
+    try:
+        # Fetch the data
+        data = await fetch_lc_problems_as_json()
+        print("✓ Successfully fetched LeetCode problems")
 
-# if __name__ == '__main__':
-#     data = fetch_lc_problems_as_json()
-#     # export_as_json(data)
-#     export_as_csv(data)
+        # Create the directory if it doesn't exist
+        filepath = (
+            Path("scripts/db/seed/csv") / f"lc_problems_{current_datetime_str}.csv"
+        )
+        filepath.parent.mkdir(parents=True, exist_ok=True)
+
+        # Export to CSV
+        await export_as_csv(data, filepath)
+        print(f"✓ Successfully exported to CSV: {filepath}")
+
+        return filepath
+
+    except Exception as e:
+        print(f"Error in get_lc_problems: {str(e)}")
+        raise
+
+
+# if __name__ == "__main__":
+#     asyncio.run(get_lc_problems())
