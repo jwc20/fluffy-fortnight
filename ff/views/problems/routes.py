@@ -30,19 +30,17 @@ def write_query(endpoint):
                LEFT JOIN tags t ON pt.tag_id=t.id 
                LEFT JOIN problem_patterns pp ON p.leetcode_number=pp.problem_id 
                LEFT JOIN patterns pa ON pp.pattern_id=pa.id 
-               WHERE t.endpoint="{endpoint}" 
+               WHERE t.endpoint=? 
                GROUP BY p.id 
                ORDER BY p.leetcode_number;"""
 
 
-def execute_query(query):
-    db = get_db()
-    return db.execute(query).fetchall()
-
-
 # https://flask.palletsprojects.com/en/stable/patterns/sqlite3/
 def query_db(query, args=(), one=False):
-    cur = get_db().execute(query, args)
+    if args == ("index",):
+        cur = get_db().execute(query)
+    else:
+        cur = get_db().execute(query, args)
     rv = cur.fetchall()
     cur.close()
     return (rv[0] if rv else None) if one else rv
@@ -68,7 +66,7 @@ def get_patterns(problems):
 def show(page):
     try:
         query = write_query(page)
-        problems = execute_query(query)
+        problems = query_db(query, (page,))
         patterns = get_patterns(problems)
         return render_template(
             f"problems/{page}.html.jinja2", problems=problems, patterns=patterns
