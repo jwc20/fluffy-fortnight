@@ -41,7 +41,7 @@ def register():
 
         flash(error)
 
-    return render_template("auth/register.html")
+    return render_template("auth/register.html.jinja2")
 
 
 @bp.route("/login", methods=("GET", "POST"))
@@ -67,7 +67,7 @@ def login():
 
         flash(error)
 
-    return render_template("auth/login.html")
+    return render_template("auth/login.html.jinja2")
 
 
 @bp.before_app_request
