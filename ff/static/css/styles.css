@@ -43,3 +43,20 @@ table > * > * > * {
     /*width: 100%;*/
     outline: black solid 1px;
 }
+
+
+.pure-menu {
+    background-color: #D9EAFD;
+}
+
+.pure-menu-item {
+    background-color: #D9EAFD;
+}
+
+.base-page {
+    background-color: #F8FAFC;
+}
+
+.container {
+    background-color: #F8FAFC;
+}
