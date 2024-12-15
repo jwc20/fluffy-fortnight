@@ -229,6 +229,7 @@ dependencies = [
     { name = "black" },
     { name = "flask" },
     { name = "flask-wtf" },
+    { name = "jinja2-fragments" },
     { name = "pandas" },
     { name = "python-dotenv" },
     { name = "requests" },
@@ -241,6 +242,7 @@ requires-dist = [
     { name = "black", specifier = ">=24.10.0" },
     { name = "flask", specifier = ">=3.1.0" },
     { name = "flask-wtf", specifier = ">=1.2.2" },
+    { name = "jinja2-fragments", specifier = ">=1.6.0" },
     { name = "pandas", specifier = ">=2.2.3" },
     { name = "python-dotenv", specifier = ">=1.0.1" },
     { name = "requests", specifier = ">=2.32.3" },
@@ -313,6 +315,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/ed/55/39036716d19cab0747a5020fc7e907f362fbf48c984b14e62127f7e68e5d/jinja2-3.1.4.tar.gz", hash = "sha256:4a3aee7acbbe7303aede8e9648d13b8bf88a429282aa6122a993f0ac800cb369", size = 240245 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/31/80/3a54838c3fb461f6fec263ebf3a3a41771bd05190238de3486aae8540c36/jinja2-3.1.4-py3-none-any.whl", hash = "sha256:bc5dd2abb727a5319567b7a813e6a2e7318c39f4f487cfe6c89c6f9c7d25197d", size = 133271 },
+]
+
+[[package]]
+name = "jinja2-fragments"
+version = "1.6.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "jinja2" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/d7/f7/d1abfa00ca1e2b28d62e48078cc039f5c92a0ed73d23bcb68a0186cccf51/jinja2_fragments-1.6.0.tar.gz", hash = "sha256:5bd7dd49b7dbfa174d45d6a991cfe3cba4a08a4b66f87cf248aa739eebc435f8", size = 14667 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/04/97/4f7a4be716e9121f14b83bc6920cf190176dbaa8ea108e76fe76d56ea11e/jinja2_fragments-1.6.0-py3-none-any.whl", hash = "sha256:49a5815cd7210edf234bf137b6005abf1ad336ff93c65519deddc41d91713986", size = 11134 },
 ]
 
 [[package]]

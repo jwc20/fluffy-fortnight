@@ -13,4 +13,5 @@ dependencies = [
     "flask-wtf>=1.2.2",
     "pandas>=2.2.3",
     "requests>=2.32.3",
+    "jinja2-fragments>=1.6.0",
 ]
