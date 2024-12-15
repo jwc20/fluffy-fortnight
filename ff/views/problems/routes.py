@@ -7,13 +7,13 @@ from ff.views.problems import bp
 
 def get_patterns(problems):
     patterns = {}
-    for index, problem in enumerate(problems):
-        print(problem)
+    for problem in problems:
         if problem["patterns"] is None:
             continue
         else:
             problem_patterns = problem["patterns"].split(",")
             for pattern in problem_patterns:
+                pattern = pattern.strip()
                 if pattern in patterns:
                     patterns[pattern] += 1
                 else:
@@ -48,7 +48,7 @@ def query_db(query, args, one=False):
         if _endpoint == "index":
             _endpoint = None
 
-        _pattern = f"%{_pattern}%"
+        _pattern = f"{_pattern}"
         cur = get_db().execute(
             query,
             (
@@ -90,7 +90,7 @@ def show(page, pattern=None):
                 (page,),
             )
         else:
-            query += "SELECT * FROM selected_problems WHERE patterns LIKE ?;"
+            query += "SELECT * FROM selected_problems WHERE instr(patterns, ?) > 0;"
             problems = query_db(
                 query,
                 (
