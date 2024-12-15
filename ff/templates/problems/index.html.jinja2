@@ -12,11 +12,11 @@
         </tr>
       </thead>
       <tbody>
-        {% for pattern in all_patterns.items() %}
-          <tr>
-            <td>{{ pattern[0] }}</td>
-            <td>{{ pattern[1] }}</td>
-          </tr>
+        {% for pattern, count in all_patterns.items() %}
+        <tr>
+            <td><a href="{{ url_for('problems.show', page='index', pattern=pattern.strip()) }}">{{ pattern }}</a></td>
+            <td>{{ count }}</td>
+        </tr>
         {% endfor %}
       </tbody>
     </table>

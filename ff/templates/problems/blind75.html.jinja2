@@ -12,10 +12,10 @@
         </tr>
         </thead>
         <tbody>
-        {% for pattern in all_patterns.items() %}
+        {% for pattern, count in all_patterns.items() %}
         <tr>
-            <td>{{ pattern[0] }}</td>
-            <td>{{ pattern[1] }}</td>
+            <td><a href="{{ url_for('problems.show', page='blind75', pattern=pattern.strip()) }}">{{ pattern }}</a></td>
+            <td>{{ count }}</td>
         </tr>
         {% endfor %}
         </tbody>
@@ -68,4 +68,4 @@
     </tbody>
 </table>
 
-{% endblock %}k %}
+{% endblock %}
